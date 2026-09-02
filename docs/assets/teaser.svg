@@ -21,12 +21,12 @@
 <rect width="1200" height="600" fill="#0a0a0a"/>
 <!-- rows: avatar + comment history, each converging into the prism -->
 <g stroke-width="2.6" fill="none">
-  <path d="M470 118 C 600 118, 640 250, 727 293" stroke="#d2202a"/>
-  <path d="M500 188 C 610 188, 650 262, 727 295" stroke="#e0641c"/>
-  <path d="M446 258 C 590 258, 650 280, 727 297" stroke="#d9b300"/>
-  <path d="M490 328 C 600 328, 650 312, 727 299" stroke="#2fae3a"/>
-  <path d="M474 398 C 600 398, 650 330, 727 301" stroke="#1d97b3"/>
-  <path d="M450 468 C 590 468, 650 345, 727 303" stroke="#8256bd"/>
+  <path d="M470 118 C 600 118, 640 250, 731 293" stroke="#d2202a"/>
+  <path d="M500 188 C 610 188, 650 262, 731 295" stroke="#e0641c"/>
+  <path d="M446 258 C 590 258, 650 280, 731 297" stroke="#d9b300"/>
+  <path d="M490 328 C 600 328, 650 312, 731 299" stroke="#2fae3a"/>
+  <path d="M474 398 C 600 398, 650 330, 731 301" stroke="#1d97b3"/>
+  <path d="M450 468 C 590 468, 650 345, 731 303" stroke="#8256bd"/>
 </g>
 <g stroke-width="2.6" stroke-linecap="round">
   <line x1="70" y1="118" x2="470" y2="118" stroke="#d2202a"/>
@@ -55,11 +55,11 @@
 <g color="#8256bd"><use href="#snoo" x="52" y="448" width="36" height="40"/>
   <use href="#card" x="120" y="453" width="84" height="30"/><use href="#card" x="240" y="453" width="84" height="30"/><use href="#card" x="366" y="453" width="84" height="30"/></g>
 <!-- prism -->
-<polygon points="800,150 660,440 940,440" fill="#0a0a0a" stroke="#fff" stroke-width="8" opacity=".55" filter="url(#glow)"/>
-<polygon points="800,150 660,440 940,440" fill="#0a0a0a" stroke="#fff" stroke-width="2.4"/>
-<polygon points="727,298 868,282 868,296" fill="#fff" opacity=".85" filter="url(#soft)"/>
+<polygon points="800,440 660,150 940,150" fill="#0a0a0a" stroke="#fff" stroke-width="8" opacity=".55" filter="url(#glow)"/>
+<polygon points="800,440 660,150 940,150" fill="#0a0a0a" stroke="#fff" stroke-width="2.4"/>
+<polygon points="731,298 873,282 873,296" fill="#fff" opacity=".85" filter="url(#soft)"/>
 <!-- single white beam out -->
-<line x1="868" y1="289" x2="1090" y2="289" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+<line x1="873" y1="289" x2="1090" y2="289" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
 <g color="#f2f2f0"><use href="#snoo" x="1096" y="269" width="36" height="40"/></g>
 <text x="800" y="512" text-anchor="middle" font-size="34" font-weight="800" fill="#fff" letter-spacing="2">LLM</text>
 </svg>

@@ -108,6 +108,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 <div class="topbar"><div class="wrap">
   <b>WRONG PERSON</b>
   <nav>
+    <a href="#example">Example</a>
     <a href="#results">Results</a>
     <a href="https://github.com/jajamoa/suite-metric-probe" target="_blank" rel="noopener">Code</a>
     <a href="#bibtex">BibTeX</a>
@@ -123,7 +124,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   <p class="heronote"><a href="mailto:jiajie@mit.edu">jiajie@mit.edu</a></p>
   <div class="tldrbox">
     <p><b class="lb">Finding</b> Free-text user simulators (HumanLM, Turing-RL) are trained and scored by an LLM judge comparing the generated reply to the person&rsquo;s real one. Feed the model the <strong>wrong person</strong> and the score does not move. A structured probe of the person&rsquo;s <strong>reasoning</strong> drops from 50 to chance.</p>
-    <p><b class="lb">Why</b> Embedding similarity and LLM-as-judge are too coarse a metric, and too coarse a reward. People on the same post agree on the verdict and differ in the reason; similarity scores the verdict, identity is in the warrant.</p>
+    <p><b class="lb">Intuition</b> Embedding similarity and LLM-as-judge lack discriminant validity across persons: they reward what everyone on a post shares. Commenters on a post mostly agree on the verdict and give different reasons, and the rubric never asks for the reason.</p>
   </div>
   <div class="btns">
     <a class="btn primary soon" href="#">Paper (soon)</a>
@@ -134,18 +135,74 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <div class="teaser">
   <a href="assets/teaser.svg" target="_blank" rel="noopener" style="border:none"><img src="assets/teaser.svg" alt="Six Reddit users with their comment histories enter a prism labeled LLM as six colored beams; a single white beam comes out."></a>
-  <p class="figcap"><b>Six people in, one voice out.</b> Whichever history goes in, the similarity judge scores the white beam the same.</p>
+  <p class="figcap">Six histories go in; nearly the same text comes out. The similarity judge scores that text the same whichever history it came from.</p>
 </div>
 
 <section class="wrap" id="problem" style="margin-top:55px">
   <div class="kicker">The missing control</div>
-  <h2>Nobody asked whether the score is about the person.</h2>
+  <h2>Does the score depend on who is being simulated?</h2>
   <p class="body">The judge score is both the RL reward and the evaluation in HumanLM (Wu et al. 2026) and Turing-RL (Wang et al. 2026). <strong>The control:</strong> swap the target&rsquo;s history for another commenter&rsquo;s on the same post and score again. If the metric measures the person, the score drops. Neither paper runs it; none of 30 surveyed papers on free-text simulation does.</p>
+</section>
+
+<section class="wrap" id="example">
+  <div class="kicker">Worked example</div>
+  <h2>A worked example</h2>
+  <p class="body"><strong>The post.</strong> A first-year teacher and mother of three skips a once-a-year gathering with her mother-in-law&rsquo;s cousins to rest and study for certification. The mother-in-law is upset. AITA?</p>
+  <div class="card" style="margin-top:6px"><div class="csub">TARGET&rsquo;S REAL COMMENT (GROUND TRUTH)</div><p>&ldquo;NTA. You need down time. It&rsquo;s sad you couldn&rsquo;t go, but your mental health and physical health matter more. If she can&rsquo;t understand, that&rsquo;s on her. I hope you&rsquo;re able to find a balance, though, because you need to be able to rest more and not be so run down.&rdquo;</p><p style="margin-top:8px"><b>Stance:</b> NTA &nbsp;&middot;&nbsp; <b>Warrant:</b> care / harm (her health comes first)</p></div>
+<svg viewBox="0 0 880 400" xmlns="http://www.w3.org/2000/svg" font-family="Inconsolata, ui-monospace, monospace" font-size="13" style="width:100%;display:block;margin-top:16px">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4f4e49"/></marker></defs>
+<style>
+ .bx{fill:#fff;stroke:#4f4e49;stroke-width:1.1}.bx.in{fill:#f2f2f0}.bx.gt{fill:#fff;stroke-dasharray:3 2}
+ .t{fill:#111110}.m{fill:#96948d;font-size:11.5px}.k{fill:#6f6f6b;font-size:11.5px;font-weight:700;letter-spacing:.12em}
+ .a{stroke:#4f4e49;stroke-width:1.1;fill:none;marker-end:url(#ar)}.big{font-size:18px;font-weight:800}
+</style>
+<text x="0" y="14" class="k">TODAY: SIMILARITY</text>
+<rect x="0" y="30" width="150" height="40" class="bx in"/><text x="75" y="48" text-anchor="middle" class="t">target's own history</text><text x="75" y="63" text-anchor="middle" class="m">same person</text>
+<rect x="0" y="90" width="150" height="40" class="bx in"/><text x="75" y="108" text-anchor="middle" class="t">another commenter's</text><text x="75" y="123" text-anchor="middle" class="m">history on this post</text>
+<rect x="190" y="60" width="90" height="40" class="bx"/><text x="235" y="84" text-anchor="middle" class="t">simulator</text>
+<path d="M150 50 L190 72" class="a"/><path d="M150 110 L190 88" class="a"/>
+<rect x="320" y="30" width="120" height="40" class="bx"/><text x="380" y="48" text-anchor="middle" class="t">free text A</text><text x="380" y="63" text-anchor="middle" class="m">"...empty cup..."</text>
+<rect x="320" y="90" width="120" height="40" class="bx"/><text x="380" y="108" text-anchor="middle" class="t">free text B</text><text x="380" y="123" text-anchor="middle" class="m">"...empty cup..."</text>
+<path d="M280 72 L320 50" class="a"/><path d="M280 88 L320 110" class="a"/>
+<rect x="480" y="60" width="110" height="40" class="bx"/><text x="535" y="78" text-anchor="middle" class="t">LLM judge</text><text x="535" y="93" text-anchor="middle" class="m">key-point coverage</text>
+<rect x="480" y="120" width="110" height="32" class="bx gt"/><text x="535" y="140" text-anchor="middle" class="m">target's real comment</text>
+<path d="M535 120 L535 100" class="a"/>
+<path d="M440 50 L480 72" class="a"/><path d="M440 110 L480 88" class="a"/>
+<path d="M590 72 L630 50" class="a"/><path d="M590 88 L630 110" class="a"/>
+<text x="640" y="56" class="big t">0.81</text><text x="640" y="116" class="big t">0.85</text>
+<text x="700" y="56" class="m">right person</text><text x="700" y="116" class="m">other person, scores higher</text>
+<text x="640" y="150" class="m">judge rerun on the same pair: 0.88 / 0.79. The gap is the judge's own noise.</text>
+
+<text x="0" y="214" class="k">OURS: STRUCTURED PROBE</text>
+<rect x="0" y="230" width="150" height="40" class="bx in"/><text x="75" y="248" text-anchor="middle" class="t">target's own history</text><text x="75" y="263" text-anchor="middle" class="m">same person</text>
+<rect x="0" y="290" width="150" height="40" class="bx in"/><text x="75" y="308" text-anchor="middle" class="t">another commenter's</text><text x="75" y="323" text-anchor="middle" class="m">history on this post</text>
+<rect x="190" y="260" width="90" height="40" class="bx"/><text x="235" y="284" text-anchor="middle" class="t">simulator</text>
+<path d="M150 250 L190 272" class="a"/><path d="M150 310 L190 288" class="a"/>
+<rect x="320" y="260" width="150" height="40" class="bx"/><text x="395" y="278" text-anchor="middle" class="t">answers the MCQ</text><text x="395" y="293" text-anchor="middle" class="m">verdict + which principle</text>
+<rect x="320" y="320" width="150" height="32" class="bx gt"/><text x="395" y="340" text-anchor="middle" class="m">MCQ built from the real comment</text>
+<path d="M395 320 L395 300" class="a"/>
+<path d="M280 280 L320 280" class="a"/>
+<path d="M470 272 L630 250" class="a"/><path d="M470 288 L630 310" class="a"/>
+<text x="640" y="256" class="big t">B. care / harm</text><text x="640" y="316" class="big t">C. property / consent</text>
+<text x="800" y="256" class="m">= real</text><text x="840" y="316" class="m">wrong</text>
+<text x="640" y="350" class="m">or hand free text A / B to a reader that answers the same MCQ (method 2).</text>
+</svg>
+  <div class="cards" style="margin-top:22px">
+    <div class="card"><h3>Free text A</h3><div class="csub">GIVEN THE TARGET&rsquo;S OWN HISTORY &middot; JUDGE 0.81</div><p>&ldquo;NTA. You&rsquo;re a new teacher, a mom of three, and a wife. You&rsquo;re already doing the work of like five people. Your MIL needs to understand that you hitting a wall isn&rsquo;t personal, it&rsquo;s survival. <mark>You can&rsquo;t pour from an empty cup</mark>, and right now yours is bone dry. Your husband gets it. That&rsquo;s what matters. [&hellip;] If your MIL can&rsquo;t respect a boundary as reasonable as this one, that&rsquo;s on her, not you.&rdquo;</p></div>
+    <div class="card"><h3>Free text B</h3><div class="csub">GIVEN ANOTHER COMMENTER&rsquo;S HISTORY &middot; JUDGE 0.85</div><p>&ldquo;NTA. You are a new teacher, a mom of three, and a wife. You are literally running on empty and your MIL is upset that you didn&rsquo;t attend a party with her second cousins? Your husband gets it. That&rsquo;s what matters. Your mental and physical health come first, <mark>you can&rsquo;t pour from an empty cup</mark>. [&hellip;] Your MIL doesn&rsquo;t have to understand introversion to respect your boundary.&rdquo;</p></div>
+  </div>
+  <p class="tnote">Judge&rsquo;s key points from the real comment: (1) NTA; (2) health matters more than the event; (3) the MIL&rsquo;s lack of understanding is her issue. Both texts cover all three, so both score high. Nothing in the rubric asks which person wrote it. The two texts are near-duplicates: the simulator barely used the history.</p>
+  <div class="card" style="margin-top:18px"><div class="csub">THE MCQ, BUILT FROM THE REAL COMMENT</div>
+    <p><b>Q1.</b> Verdict? &nbsp;A. NTA &nbsp;B. YTA</p>
+    <p style="margin-top:6px"><b>Q2.</b> Which principle does this person rely on? &nbsp;A. role obligation &nbsp;<b>B. care / harm</b> &nbsp;C. property / consent &nbsp;D. autonomy / boundaries</p>
+    <p style="margin-top:10px">Simulator with the target&rsquo;s history: <b>A, B</b> (matches). &nbsp;With another commenter&rsquo;s history: <b>A, C</b> (verdict right, reason wrong).</p>
+  </div>
+  <p class="body" style="margin-top:16px">The swap changed the answer to Q2 only. The judge score did not register it; the probe did. Across the pilot, the judge&rsquo;s same-vs-swapped gap is the size of its own rerun noise, while the probe&rsquo;s warrant accuracy halves.</p>
 </section>
 
 <section class="wrap" id="field">
   <div class="kicker">Field</div>
-  <h2>How simulators get validated.</h2>
+  <h2>How the field validates simulators</h2>
   <div class="tablewrap"><table>
     <thead><tr><th class="l">Line</th><th class="l">Fidelity metric</th><th class="l">Wrong-person control</th></tr></thead>
     <tbody>
@@ -161,7 +218,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <section class="wrap" id="control">
   <div class="kicker">Design</div>
-  <h2>Same post, three conditions, three rulers.</h2>
+  <h2>Design</h2>
   <div class="steps">
     <div class="step"><div class="sh">SAME</div>Generate with the target&rsquo;s own comment history.</div>
     <div class="step"><div class="sh">CROSS</div>Generate with another commenter&rsquo;s history on the same post. Wrong person, same post.</div>
@@ -172,7 +229,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <section class="wrap" id="results">
   <div class="kicker">Results</div>
-  <h2>Swap the person. Watch each ruler.</h2>
+  <h2>Results</h2>
   <div class="stats">
     <div class="stat on"><b>25.1</b>warrant probe drop (pts), SNR &asymp; 50</div>
     <div class="stat"><b>2.8</b>stance probe drop (pts)</div>
@@ -180,7 +237,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     <div class="stat"><b>0.5</b>embedding cosine drop (pts)</div>
   </div>
 
-  <h3 class="sub">A. The structured probe sees it</h3>
+  <h3 class="sub">A. Structured probe under the swap (SUITE)</h3>
   <p class="tnote" style="margin-top:0">SUITE Table 2. Claude Sonnet 4.6 answering the probe directly, 3 runs.</p>
   <div class="tablewrap"><table>
     <thead><tr><th>Probe</th><th>same</th><th>cross</th><th>drop</th><th>std</th><th>SNR</th></tr></thead>
@@ -190,7 +247,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     </tbody>
   </table></div>
 
-  <h3 class="sub">B. The similarity metrics do not</h3>
+  <h3 class="sub">B. Similarity metrics under the swap (pilot)</h3>
   <p class="tnote" style="margin-top:0">Pilot. 60 items, 53 users, generator claude-4.5-haiku. Scores in [0, 1].</p>
   <div class="tablewrap"><table>
     <thead><tr><th>Metric</th><th>same</th><th>cross</th><th>same2</th><th>person effect [95% CI]</th><th>noise floor [95% CI]</th></tr></thead>
@@ -202,13 +259,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   <p class="tnote">AUC for ranking the right person above the wrong one: judge 0.64 [0.53, 0.75], embedding 0.48. Chance is 0.50.</p>
   <div class="warn"><b>Caveat.</b> The pilot generator (Haiku) ignores the history: stance is 0.767 in all three conditions, warrant at the majority baseline, and structure read off its text is flat too. No ruler can find a person the text does not contain. Table A used Sonnet. The pilot is being regenerated with Sonnet so all three rulers meet on the same texts.</div>
 
-  <h3 class="sub">C. The probe reads structure off real text</h3>
+  <h3 class="sub">C. Reading the probe off real text</h3>
   <p class="body">Given only the real comment, a reader model recovers the labels at <strong>98.3%</strong> (stance) and <strong>65.0%</strong> (warrant; human annotators 73%). The probe applies to any simulator&rsquo;s free text.</p>
 </section>
 
 <section class="wrap" id="why">
-  <div class="kicker">Why</div>
-  <h2>Identity lives in the reason, not the verdict.</h2>
+  <div class="kicker">Intuition</div>
+  <h2>Where people on the same post differ</h2>
   <div class="tablewrap"><table>
     <thead><tr><th>Layer</th><th>entropy across commenters (bits)</th><th>posts where all commenters agree</th></tr></thead>
     <tbody>
@@ -221,19 +278,19 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <section class="wrap" id="proposal">
   <div class="kicker">Proposal</div>
-  <h2>Score the structure.</h2>
+  <h2>Score the reasoning structure</h2>
   <a href="assets/rulers.svg" target="_blank" rel="noopener" style="border:none;display:block;margin-top:16px"><img src="assets/rulers.svg" style="width:100%;display:block;border:1px solid var(--line)" alt="Two rulers. A: six people's texts enter an LLM judge and one number, 0.60, comes out. B: the same six texts enter a prism labeled warrant probe and six distinct moral principles come out."></a>
-  <p class="figcap" style="text-align:left;margin:10px 0 0;max-width:none"><b>Same six texts, two rulers.</b> The judge returns one number for all of them. The probe returns the reason each person gave.</p>
+  <p class="figcap" style="text-align:left;margin:10px 0 0;max-width:none">The same six texts through two rulers. The judge returns one number for all of them; the probe returns the reason each person gave.</p>
   <div class="cards">
     <div class="card"><h3>Agent answers the probe</h3><div class="csub">METHOD 1</div><p>The simulator gets the context and the stance / warrant questions built from the real comment. This is SUITE; gives Table A.</p></div>
     <div class="card"><h3>Read the probe off the text</h3><div class="csub">METHOD 2</div><p>The simulator generates freely; a reader answers the same questions from the text alone. Works on HumanLM and Turing-RL outputs unchanged.</p></div>
   </div>
-  <p class="body" style="margin-top:18px">A fidelity signal should move when the person changes and hold when only the sample changes. Warrant passes by fifty to one. Similarity fails, and similarity is the reward.</p>
+  <p class="body" style="margin-top:18px">A fidelity signal should move when the person changes and hold when only the sample changes. The warrant probe meets this at a signal-to-noise ratio near 50. The similarity scores do not, and they are the training reward in both papers.</p>
 </section>
 
 <section class="wrap" id="next">
   <div class="kicker">Status</div>
-  <h2>Next.</h2>
+  <h2>Next</h2>
   <div class="steps">
     <div class="step"><div class="sh">1</div>Regenerate the pilot with Sonnet 4.6; redo B on texts that pass the manipulation check.</div>
     <div class="step"><div class="sh">2</div>Scale to about 200 items, 3 seeds; report SNR per metric.</div>
