@@ -222,6 +222,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 <section class="wrap" id="proposal">
   <div class="kicker">Proposal</div>
   <h2>Score the structure.</h2>
+  <a href="assets/rulers.svg" target="_blank" rel="noopener" style="border:none;display:block;margin-top:16px"><img src="assets/rulers.svg" style="width:100%;display:block;border:1px solid var(--line)" alt="Two rulers. A: six people's texts enter an LLM judge and one number, 0.60, comes out. B: the same six texts enter a prism labeled warrant probe and six distinct moral principles come out."></a>
+  <p class="figcap" style="text-align:left;margin:10px 0 0;max-width:none"><b>Same six texts, two rulers.</b> The judge returns one number for all of them. The probe returns the reason each person gave.</p>
   <div class="cards">
     <div class="card"><h3>Agent answers the probe</h3><div class="csub">METHOD 1</div><p>The simulator gets the context and the stance / warrant questions built from the real comment. This is SUITE; gives Table A.</p></div>
     <div class="card"><h3>Read the probe off the text</h3><div class="csub">METHOD 2</div><p>The simulator generates freely; a reader answers the same questions from the text alone. Works on HumanLM and Turing-RL outputs unchanged.</p></div>
