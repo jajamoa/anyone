@@ -119,11 +119,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   <div class="kickerline">Preprint &middot; work in progress &middot; 2026</div>
   <h1>The Wrong Person Scores the Same: <span class="h1a">User-Simulator Metrics Never Checked Whose Response They Reward</span></h1>
   <p class="heroauthors">Chance Jiajie Li<sup>1</sup></p>
-  <p class="heroaffils"><sup>1</sup>MIT Media Lab</p>
+  <p class="heroaffils"><sup>1</sup>Massachusetts Institute of Technology</p>
   <p class="heronote"><a href="mailto:jiajie@mit.edu">jiajie@mit.edu</a></p>
   <div class="tldrbox">
     <p><b class="lb">Finding</b> Free-text user simulators (HumanLM, Turing-RL) are trained and scored by an LLM judge comparing the generated reply to the person&rsquo;s real one. Feed the model the <strong>wrong person</strong> and the score does not move. A structured probe of the person&rsquo;s <strong>reasoning</strong> drops from 50 to chance.</p>
-    <p><b class="lb">Why</b> People on the same post agree on the verdict and differ in the reason. Similarity scores the verdict. Identity is in the warrant.</p>
+    <p><b class="lb">Why</b> Embedding similarity and LLM-as-judge are too coarse a metric, and too coarse a reward. People on the same post agree on the verdict and differ in the reason; similarity scores the verdict, identity is in the warrant.</p>
   </div>
   <div class="btns">
     <a class="btn primary soon" href="#">Paper (soon)</a>
