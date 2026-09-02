@@ -20,8 +20,8 @@
 </defs>
 <rect width="1200" height="600" fill="#0a0a0a"/>
 <line x1="40" y1="300" x2="1160" y2="300" stroke="#333" stroke-dasharray="4 5"/>
-<text x="60" y="38" font-size="15" fill="#96948d" letter-spacing="2">A &#183; SIMILARITY: SIX COLORS BECOME WHITE</text>
-<text x="60" y="338" font-size="15" fill="#96948d" letter-spacing="2">B &#183; STRUCTURE: THE COLORS STAY APART</text>
+<text x="60" y="38" font-size="15" fill="#96948d" letter-spacing="0.5">A &#183; Similarity: six colors become white</text>
+<text x="60" y="338" font-size="15" fill="#96948d" letter-spacing="0.5">B &#183; Structure: the colors stay apart</text>
 <g color="#d2202a"><use href="#snoo" x="56" y="64" width="30" height="34"/><use href="#card" x="104" y="67" width="74" height="26"/></g>
 <line x1="178" y1="80" x2="260" y2="80" stroke="#d2202a" stroke-width="2.4"/>
 <path d="M260 80 C 420 80, 480 150.0, 637 150.0" stroke="#d2202a" stroke-width="2.4" fill="none"/>
@@ -43,7 +43,7 @@
 <polygon points="680,255 590,55 770,55" fill="#0a0a0a" stroke="#fff" stroke-width="7" opacity=".5" filter="url(#glow)"/>
 <polygon points="680,255 590,55 770,55" fill="#0a0a0a" stroke="#fff" stroke-width="2.2"/>
 <polygon points="637,160 723,150 723,170" fill="#fff" opacity=".85" filter="url(#soft)"/>
-<text x="680" y="285" text-anchor="middle" font-size="13" fill="#96948d" letter-spacing="1.5">EMBEDDING &#183; LLM JUDGE</text>
+<text x="680" y="285" text-anchor="middle" font-size="13" fill="#96948d" letter-spacing="0.5">embedding &#183; LLM judge</text>
 <line x1="723" y1="160" x2="930" y2="160" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
 <text x="950" y="174" font-size="42" font-weight="800" fill="#fff">0.60</text>
 <text x="950" y="200" font-size="13" fill="#96948d">whichever person went in</text>
@@ -80,5 +80,5 @@
 <text x="950" y="513" font-size="15" fill="#1d97b3" font-weight="700">property</text>
 <path d="M725 450.0 C 800 450.0, 830 540, 930 540" stroke="#8256bd" stroke-width="2.4" fill="none"/>
 <text x="950" y="545" font-size="15" fill="#8256bd" font-weight="700">honesty</text>
-<text x="680" y="580" text-anchor="middle" font-size="13" fill="#96948d" letter-spacing="1.5">STANCE &#183; WARRANT PROBE</text>
+<text x="680" y="580" text-anchor="middle" font-size="13" fill="#96948d" letter-spacing="0.5">stance &#183; warrant probe</text>
 </svg>

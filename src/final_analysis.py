@@ -5,14 +5,14 @@ sample. The second same-person sample is the noise floor: whatever separates it
 from the first is pure sampling variance, with the person held fixed. A metric
 that cannot beat that floor is not measuring the person.
 """
-import json, collections, statistics, random
+import json, collections, statistics, random, os
 
 items={i["item_id"]:i for i in json.load(open("data/items_pilot.json"))}
 R=collections.defaultdict(dict)
 for l in open("results/raw/pilot.jsonl"):
     r=json.loads(l); R[r["item_id"]][r["cond"]]=r
 resamp=json.load(open("results/raw/resample.json"))
-J={s["item_id"]:s for s in json.load(open("results/raw/humanlm_scores.json"))
+J={s["item_id"]:s for s in json.load(open(os.environ.get("JUDGE","results/raw/humanlm_scores.json")))
    if "parse_error" not in s}
 keys=[k for k in J if k in R and "same" in R[k] and "cross" in R[k]]
 print(f"n = {len(keys)} items, {len({items[k]['target_user'] for k in keys})} users\n")
