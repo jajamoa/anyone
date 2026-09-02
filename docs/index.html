@@ -124,7 +124,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   <p class="heronote"><a href="mailto:jiajie@mit.edu">jiajie@mit.edu</a></p>
   <div class="tldrbox">
     <p><b class="lb">Finding</b> Free-text user simulators (HumanLM, Turing-RL) are trained and scored by an LLM judge comparing the generated reply to the person&rsquo;s real one. Feed the model <strong>someone else&rsquo;s</strong> history and the score does not move. Ask instead which principle the person would cite, and accuracy drops from 50% to 25%, no better than guessing among four options.</p>
-    <p><b class="lb">Intuition</b> Embedding similarity and LLM-as-judge lack discriminant validity across persons: they reward what everyone on a post shares. Commenters on a post mostly agree on the verdict and give different reasons, and the rubric never asks for the reason.</p>
+    <p><b class="lb">Intuition</b> Embedding similarity and LLM-as-judge lack discriminant validity across persons. On a given post most people reach the same verdict; what sets one person apart is the reason they give, and neither metric looks at the reason.</p>
   </div>
   <div class="btns">
     <a class="btn primary soon" href="#">Paper (soon)</a>
