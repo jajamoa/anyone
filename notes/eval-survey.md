@@ -47,3 +47,28 @@ The field splits by output type. Closed-answer simulators validate with individu
 No paper in this set evaluates reasoning structure against a justification the person actually gave. HumanLM's latent states are inferred by the judge from the reply text. PersonaGym, TwinVoice, OPeRA and Bisbee score generated reasons for plausibility only. Park discards the reasoning field for lack of ground truth.
 
 Identity controls are rare and one-sided. The common pattern is a nested-information ablation (demographics-only, empty persona, interview lesion), which shows that more data about the right person helps but never asks whether data about the wrong person would score as well. The only respondent-level permutation found is Kim & Lee 2023 (AUC 0.857 to 0.720); Anthology's random-backstory matching is the nearest analogue for prompted personas. Peng et al. (twins closer to the empty-persona twin than to their own human) and Hewitt et al. (interaction effects r near 0) are the strongest published hints that a good fidelity number can carry almost no identity information. HumanLM, Turing-RL, TwinVoice, BehaviorChain, Twin-2K-500 and OPeRA report no identity baseline at all. A cross-person permutation applied to a free-text fidelity metric is an open gap.
+
+## Related claims: judges and similarity metrics miss individuality (searched 2026-09-02)
+
+Nobody states the claim in our form (LLM-judge and embedding similarity reward the shared part and are blind to who wrote it). Four papers from 2025 to 2026 each cover a piece. The specific control, swap the person and rescore free text, appears to be open.
+
+Closest:
+1. Guo et al. Individual Turing Test. SIGIR 2026, arXiv:2603.01289. One volunteer, 10+ years of private messages. Strangers prefer simulated replies (~40% vs ~20% for ground truth); acquaintances reverse it. "General human-likeness does not imply identity-specific fidelity." Same claim in spirit; metrics not tested directly.
+2. Wang et al. Learning User Simulators with Turing Rewards (Turing-RL). arXiv:2606.19336. "Content matching and human-likeness come apart": similarity reward raises ground-truth coverage without making replies harder to distinguish from the real user. Closest in mechanism; framed as single-reference variance.
+3. Jangra et al. Evaluating Style-Personalized Text Generation. EMNLP 2026, arXiv:2508.06374. BLEU, ROUGE, style embeddings and GPT-4.1 judge all degrade from domain to author to personalized-vs-generic (16% then 7.5%). Same claim on the metric side; writing assistance, not simulation.
+4. Xiao et al. The Chameleon's Limit. arXiv:2604.24698. "Fidelity Trap": highest per-persona fidelity (rho > 0.9) coincides with most collapsed populations (d > 6). Per-persona scores reward homogenization; trait scores, not free text.
+
+Partial:
+5. Zhou et al. PersonaEval. COLM 2025, arXiv:2508.10014. LLM judges identify the speaking character at ~69% vs humans 90.8%. Fictional characters.
+6. Bao et al. Eval4Sim. arXiv:2603.02876. BLEU/perplexity capture surface overlap; measures consistency via authorship verification across personas.
+7. Li et al. PRISM. EMNLP 2026, arXiv:2608.26674. Holistic LLM-judge persona scoring as "appraisal hallucination"; structured inverse inference instead.
+8. Shin et al. Spotting Out-of-Character Behavior. Findings ACL 2025, arXiv:2506.19352. Whole-response scores hide persona drift; atomic-level scoring.
+
+Tangential:
+9. Groner and Chiou. arXiv:2606.16778. GPT-4o as writer and judge fails to reproduce individual style preference variation (n = 30).
+10. Abbas. Attribution Quality in AI-Generated Content. arXiv:2510.13898. GPT-4o attribution judge 68% vs style embeddings 82%; human-vs-machine, not person-vs-person.
+11. Huang, Chen, Shu. Can LLMs Identify Authorship? Findings EMNLP 2024, arXiv:2403.08213. Counter-evidence to keep in mind: an LLM explicitly asked for authorship does reasonably well. A similarity judge is never asked.
+12. Taday Morocho et al. Reliability of Persona-Conditioned LLMs as Synthetic Survey Respondents. WWW 2026 Companion, arXiv:2602.18462. WVS, 70k cases; persona prompting gives no clear gain; cleanest "drop the persona, little changes" control, but closed-form items. See also arXiv:2604.28048.
+13. Hu et al. SimBench. arXiv:2510.17516. Alignment-simulation tradeoff: tuned models do well on consensus items, badly where humans disagree. Generator side.
+14. Wang, Morgenstern, Dickerson. Nature MI 2025, arXiv:2402.01908. LLM stand-ins flatten within-group variation. Standard homogenization citation.
+15. Twin-2K-500 (arXiv:2505.17479), Park et al. 2024 (1,000 people), TwinVoice (arXiv:2510.25536): closed-form or judge-scored, none tests judge sensitivity to identity.
