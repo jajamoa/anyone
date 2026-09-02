@@ -3,77 +3,191 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Wrong Person Scores the Same</title>
-<meta name="description" content="User-simulator fidelity metrics never checked whose response they reward. A cross-person control shows similarity metrics are blind to the person; structured warrant probes are not.">
-<style> below is a mirror of ~/.claude/assets/house-style.css (v1).
-  Keep them in sync; house-style.css is the source of truth.
-  Replace the demo content. Fonts load from CDN.
--->
+<title>The Wrong Person Scores the Same: User-Simulator Metrics Never Checked Whose Response They Reward</title>
+<meta name="description" content="User-simulator fidelity metrics never checked whose response they reward. Cross-person control: similarity metrics are blind to the person, structured warrant probes are not.">
+<!-- style: verbatim ~/.claude/assets/house-style.css -->
 <style>
+/* ============================================================
+   cjj.li HOUSE STYLE  ·  v1
+   Distilled from github.com/jajamoa/cjj.li (Hugo "smol" theme +
+   custom.css). Minimalist personal-site aesthetic:
+     · monospace, light weight, narrow centered column
+     · near-monochrome + classic-blue links
+     · thin gray borders, light code blocks, "+ / −" collapsibles
+   Self-contained: paste this whole file into a <style> block to
+   ship a single-file page. Fonts load from CDN (Inconsolata via
+   Google Fonts, LXGW WenKai / 霞鹜文楷 via jsDelivr).
+   ============================================================ */
+
+/* --- fonts (CDN; both verified 200) --- */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont/style.css');
+
 :root{
-  --bg:#ffffff;--fg:#444444;--fg-strong:#333333;--muted:#999999;--muted-2:#888888;--muted-3:#666666;
-  --link:#0000ee;--link-soft:#2563eb;--border:#e0e0e0;--border-2:#e8e8e8;--code-bg:#f8f8f8;--th-bg:#f5f5f5;--zebra:#f9f9f9;
-  --accent:#0000ee;--ok:#15803d;--warn:#b91c1c;
+  /* palette */
+  --bg:#ffffff;
+  --fg:#444444;          /* body text (smol base) */
+  --fg-strong:#333333;   /* headings, code text */
+  --muted:#999999;       /* hints */
+  --muted-2:#888888;
+  --muted-3:#666666;
+  --link:#0000ee;        /* classic-web blue — faithful to smol */
+  --link-soft:#2563eb;
+  --border:#e0e0e0;
+  --border-2:#e8e8e8;
+  --code-bg:#f8f8f8;
+  --th-bg:#f5f5f5;
+  --zebra:#f9f9f9;
+  --accent:#0000ee;
+  --ok:#15803d;
+  --warn:#b91c1c;
+  /* type */
   --font-mono:"Inconsolata","LXGW WenKai",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
   --font-cn:"LXGW WenKai","Songti SC","SimSun",serif;
-  --fs:14px;--lh:1.6;--maxw:840px;--radius:4px;--gap:16px;
+  --fs:14px;
+  --lh:1.6;
+  /* layout */
+  --maxw:840px;
+  --radius:4px;
+  --gap:16px;
 }
+
 *,*::before,*::after{box-sizing:border-box;}
-html{overflow-y:scroll;scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
-body{max-width:var(--maxw);margin:40px auto;padding:0 16px;font-family:var(--font-mono);font-weight:300;font-size:var(--fs);line-height:var(--lh);color:var(--fg);background:var(--bg);-webkit-font-smoothing:antialiased;}
+
+html{overflow-y:scroll; scroll-behavior:smooth; -webkit-text-size-adjust:100%;}
+
+body{
+  max-width:var(--maxw);
+  margin:40px auto;
+  padding:0 16px;
+  font-family:var(--font-mono);
+  font-weight:300;
+  font-size:var(--fs);
+  line-height:var(--lh);
+  color:var(--fg);
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+}
 :lang(zh),:lang(zh-CN),.cn{font-family:var(--font-cn);}
-a{color:var(--link);overflow-wrap:break-word;word-break:break-word;}
-a:visited{color:var(--link);}a:hover{opacity:.7;}
-h1,h2,h3,h4,h5{font-weight:300;line-height:1.25;color:var(--fg-strong);margin:1.6em 0 .55em;}
-h1{font-size:24px;}h2{font-size:19px;}h3{font-size:16px;}
-h4{font-size:14px;color:var(--muted-3);text-transform:uppercase;letter-spacing:.06em;}
-p{margin:.7em 0;}ul,ol{padding-left:1.4em;}li{margin:.3em 0;}strong,b{font-weight:600;}
-hr{border:none;border-top:1px solid var(--border);margin:1.6rem 0;}
-blockquote{margin:14px 0;padding:2px 14px;border-left:3px solid var(--border);color:var(--muted-3);}
-.hint{color:var(--muted);font-size:.85em;}.hint-italic{color:var(--muted);font-size:.85em;font-style:italic;}
-small,.small{font-size:.85em;color:var(--muted-3);}mark{background:#fff3b0;color:inherit;padding:0 2px;}
-code{background:var(--code-bg);border:1px solid var(--border-2);border-radius:3px;padding:2px 4px;font-size:.9em;color:var(--fg-strong);font-family:var(--font-mono);}
-pre{background:#fff;border:1px solid var(--border-2);border-radius:var(--radius);padding:16px;margin:16px 0;overflow-x:auto;font-size:14px;line-height:1.5;color:var(--fg-strong);box-shadow:0 1px 2px rgba(0,0,0,.05);}
-pre code{background:none;border:none;padding:0;font-size:inherit;}
-kbd{background:#fff;border:1px solid var(--border);border-bottom-width:2px;border-radius:3px;padding:1px 6px;font-size:.85em;font-family:var(--font-mono);color:var(--fg-strong);}
-.table-wrap{display:block;width:100%;margin:20px 0;overflow-x:auto;-webkit-overflow-scrolling:touch;}
-table{width:100%;border-collapse:collapse;background:#fff;font-size:13px;}
-th,td{border:1px solid var(--border);padding:8px 12px;text-align:left;vertical-align:top;}
-th{background:var(--th-bg);font-weight:600;color:var(--fg-strong);}thead{border-bottom:2px solid var(--border);}
+
+/* --- links --- */
+a{color:var(--link); overflow-wrap:break-word; word-break:break-word;}
+a:visited{color:var(--link);}
+a:hover{opacity:.7;}
+
+/* --- headings (faithful: light weight, modest scale) --- */
+h1,h2,h3,h4,h5{font-weight:300; line-height:1.25; color:var(--fg-strong); margin:1.6em 0 .55em;}
+h1{font-size:24px;}
+h2{font-size:19px;}
+h3{font-size:16px;}
+h4{font-size:14px; color:var(--muted-3); text-transform:uppercase; letter-spacing:.06em;}
+p{margin:.7em 0;}
+ul,ol{padding-left:1.4em;}
+li{margin:.3em 0;}
+strong,b{font-weight:600;}
+
+hr{border:none; border-top:1px solid var(--border); margin:1.6rem 0;}
+
+blockquote{margin:14px 0; padding:2px 14px; border-left:3px solid var(--border); color:var(--muted-3);}
+
+/* --- muted / hint text --- */
+.hint{color:var(--muted); font-size:.85em;}
+.hint-italic{color:var(--muted); font-size:.85em; font-style:italic;}
+small,.small{font-size:.85em; color:var(--muted-3);}
+mark{background:#fff3b0; color:inherit; padding:0 2px;}
+
+/* --- code --- */
+code{background:var(--code-bg); border:1px solid var(--border-2); border-radius:3px; padding:2px 4px; font-size:.9em; color:var(--fg-strong); font-family:var(--font-mono);}
+pre{background:#fff; border:1px solid var(--border-2); border-radius:var(--radius); padding:16px; margin:16px 0; overflow-x:auto; font-size:14px; line-height:1.5; color:var(--fg-strong); box-shadow:0 1px 2px rgba(0,0,0,.05);}
+pre code{background:none; border:none; padding:0; font-size:inherit;}
+kbd{background:#fff; border:1px solid var(--border); border-bottom-width:2px; border-radius:3px; padding:1px 6px; font-size:.85em; font-family:var(--font-mono); color:var(--fg-strong);}
+
+/* --- tables --- */
+.table-wrap{display:block; width:100%; margin:20px 0; overflow-x:auto; -webkit-overflow-scrolling:touch;}
+table{width:100%; border-collapse:collapse; background:#fff; font-size:13px;}
+th,td{border:1px solid var(--border); padding:8px 12px; text-align:left; vertical-align:top;}
+th{background:var(--th-bg); font-weight:600; color:var(--fg-strong);}
+thead{border-bottom:2px solid var(--border);}
 tbody tr:nth-child(even){background:var(--zebra);}
-details{border:1px solid var(--border);border-radius:var(--radius);padding:10px 14px;margin:10px 0;background:#fff;}
-summary{cursor:pointer;list-style:none;user-select:none;font-weight:400;color:var(--fg-strong);}
-summary::-webkit-details-marker{display:none;}summary::before{content:"+ ";color:var(--muted-3);}
-details[open] summary::before{content:"− ";}details[open] summary{margin-bottom:8px;}
-.tooltip-ref{position:relative;cursor:help;}.tooltip-ref sup{color:var(--muted-3);font-size:.75em;margin-left:2px;}
-.tooltip-text{visibility:hidden;opacity:0;position:absolute;bottom:125%;left:50%;transform:translateX(-50%);background:#fff;color:var(--link-soft);padding:6px 10px;border:1px solid #333;max-width:280px;white-space:normal;z-index:1000;font-size:13px;line-height:1.4;transition:opacity .25s,visibility .25s;box-shadow:0 2px 8px rgba(0,0,0,.08);}
-.tooltip-ref:hover .tooltip-text{visibility:visible;opacity:1;}
-.hs-nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-bottom:1px solid var(--border);margin:0 -16px 24px;padding:10px 16px;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;font-size:13px;}
-.hs-nav a{color:var(--muted-3);text-decoration:none;}.hs-nav a:hover{color:var(--link);opacity:1;}
-.hs-nav .brand{color:var(--fg-strong);font-weight:600;margin-right:auto;}
-.hero{padding:6px 0 2px;}.hero .eyebrow{color:var(--muted);font-size:.85em;letter-spacing:.05em;}
-.hero h1{margin:.15em 0 .25em;}.hero .tagline{color:var(--muted-3);font-size:15px;}
-section{padding:18px 0;scroll-margin-top:64px;}.section-num{color:var(--muted);font-weight:300;margin-right:.4em;}
-.grid{display:grid;gap:var(--gap);grid-template-columns:repeat(auto-fit,minmax(230px,1fr));}
-.grid-2{display:grid;gap:var(--gap);grid-template-columns:repeat(auto-fit,minmax(300px,1fr));}
-.card{border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.04);}
-.card>h3,.card>h4,.card>:first-child{margin-top:0;}.card>:last-child{margin-bottom:0;}
-.callout{border-left:3px solid var(--accent);background:var(--code-bg);padding:10px 14px;margin:14px 0;border-radius:0 var(--radius) var(--radius) 0;}
-.callout.ok{border-left-color:var(--ok);}.callout.warn{border-left-color:var(--warn);}.callout .label{font-weight:600;color:var(--fg-strong);}
-.chip{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:1px 9px;font-size:.78em;color:var(--muted-3);background:#fff;margin:2px 3px 2px 0;white-space:nowrap;}.chip.solid{background:var(--code-bg);}
-ol.steps{counter-reset:step;list-style:none;padding-left:0;}ol.steps>li{position:relative;padding-left:32px;margin:12px 0;}
-ol.steps>li::before{counter-increment:step;content:counter(step);position:absolute;left:0;top:1px;width:20px;height:20px;line-height:20px;text-align:center;border:1px solid var(--fg-strong);border-radius:50%;font-size:11px;color:var(--fg-strong);}
-footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:.85em;}
-.muted{color:var(--muted);}.center{text-align:center;}.stack>*+*{margin-top:10px;}
-@media (max-width:768px){body{padding:0 14px;margin:24px auto;}.hs-nav{margin:0 -14px 18px;}table{font-size:13px;white-space:nowrap;}}
+
+/* --- details / collapsible — signature "+ / −" marker --- */
+details{border:1px solid var(--border); border-radius:var(--radius); padding:10px 14px; margin:10px 0; background:#fff;}
+summary{cursor:pointer; list-style:none; user-select:none; font-weight:400; color:var(--fg-strong);}
+summary::-webkit-details-marker{display:none;}
+summary::before{content:"+ "; color:var(--muted-3);}
+details[open] summary::before{content:"− ";}
+details[open] summary{margin-bottom:8px;}
+
+/* --- tooltip ref (superscript) --- */
+.tooltip-ref{position:relative; cursor:help;}
+.tooltip-ref sup{color:var(--muted-3); font-size:.75em; margin-left:2px;}
+.tooltip-text{visibility:hidden; opacity:0; position:absolute; bottom:125%; left:50%; transform:translateX(-50%); background:#fff; color:var(--link-soft); padding:6px 10px; border:1px solid #333; max-width:280px; white-space:normal; z-index:1000; font-size:13px; line-height:1.4; transition:opacity .25s,visibility .25s; box-shadow:0 2px 8px rgba(0,0,0,.08);}
+.tooltip-ref:hover .tooltip-text{visibility:visible; opacity:1;}
+
+/* ============================================================
+   COMPONENTS — built in the same language (mono, thin borders)
+   ============================================================ */
+
+/* sticky minimal nav */
+.hs-nav{position:sticky; top:0; z-index:50; background:rgba(255,255,255,.92); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); border-bottom:1px solid var(--border); margin:0 -16px 24px; padding:10px 16px; display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 14px; font-size:13px;}
+.hs-nav a{color:var(--muted-3); text-decoration:none;}
+.hs-nav a:hover{color:var(--link); opacity:1;}
+.hs-nav .brand{color:var(--fg-strong); font-weight:600; margin-right:auto;}
+
+/* hero */
+.hero{padding:6px 0 2px;}
+.hero .eyebrow{color:var(--muted); font-size:.85em; letter-spacing:.05em;}
+.hero h1{margin:.15em 0 .25em;}
+.hero .tagline{color:var(--muted-3); font-size:15px;}
+
+/* section */
+section{padding:18px 0; scroll-margin-top:64px;}
+.section-num{color:var(--muted); font-weight:300; margin-right:.4em;}
+
+/* card + grid */
+.grid{display:grid; gap:var(--gap); grid-template-columns:repeat(auto-fit,minmax(230px,1fr));}
+.grid-2{display:grid; gap:var(--gap); grid-template-columns:repeat(auto-fit,minmax(300px,1fr));}
+.card{border:1px solid var(--border); border-radius:var(--radius); padding:14px 16px; background:#fff; box-shadow:0 1px 2px rgba(0,0,0,.04);}
+.card>h3,.card>h4,.card>:first-child{margin-top:0;}
+.card>:last-child{margin-bottom:0;}
+
+/* callout */
+.callout{border-left:3px solid var(--accent); background:var(--code-bg); padding:10px 14px; margin:14px 0; border-radius:0 var(--radius) var(--radius) 0;}
+.callout.ok{border-left-color:var(--ok);}
+.callout.warn{border-left-color:var(--warn);}
+.callout .label{font-weight:600; color:var(--fg-strong);}
+
+/* chips / tags */
+.chip{display:inline-block; border:1px solid var(--border); border-radius:999px; padding:1px 9px; font-size:.78em; color:var(--muted-3); background:#fff; margin:2px 3px 2px 0; white-space:nowrap;}
+.chip.solid{background:var(--code-bg);}
+
+/* numbered steps */
+ol.steps{counter-reset:step; list-style:none; padding-left:0;}
+ol.steps>li{position:relative; padding-left:32px; margin:12px 0;}
+ol.steps>li::before{counter-increment:step; content:counter(step); position:absolute; left:0; top:1px; width:20px; height:20px; line-height:20px; text-align:center; border:1px solid var(--fg-strong); border-radius:50%; font-size:11px; color:var(--fg-strong);}
+
+/* footer */
+footer{margin-top:48px; padding-top:16px; border-top:1px solid var(--border); color:var(--muted); font-size:.85em;}
+
+/* utilities */
+.muted{color:var(--muted);}
+.center{text-align:center;}
+.stack>*+*{margin-top:10px;}
+
+/* --- responsive --- */
+@media (max-width:768px){
+  body{padding:0 14px; margin:24px auto;}
+  .hs-nav{margin:0 -14px 18px;}
+  table{font-size:13px; white-space:nowrap;}
+}
+
+@media (max-width:860px){.hero h1{white-space:normal!important;}}
 </style>
 </head>
 <body>
 
 <nav class="hs-nav">
-  <span class="brand">The Wrong Person Scores the Same</span>
+  <span class="brand">Wrong Person</span>
   <a href="#question">Question</a>
   <a href="#field">Field</a>
   <a href="#control">Control</a>
@@ -85,15 +199,9 @@ footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--border);color
 
 <header class="hero">
   <div class="eyebrow">PROJECT PAGE / WORK IN PROGRESS</div>
-  <h1>The Wrong Person Scores the Same</h1>
-  <p class="tagline">User-simulator metrics never checked whose response they reward. We run the missing control.</p>
-  <p>
-    <span class="chip solid">preliminary</span>
-    <span class="chip">n = 60 pilot</span>
-    <span class="chip">r/AmItheAsshole</span>
-    <span class="chip">builds on SUITE</span>
-  </p>
-  <p class="hint">Companion to <a href="#">SUITE</a> (structured user-simulation evaluation with stance / evidence / warrant probes). Numbers on this page are from a small pilot and will change. Last updated 2026-09-02.</p>
+  <h1 style="white-space:nowrap;font-size:16.5px;letter-spacing:-.01em">The Wrong Person Scores the Same: User-Simulator Metrics Never Checked Whose Response They Reward</h1>
+  <p class="tagline">Chance Li &nbsp;·&nbsp; MIT</p>
+  <p><span class="chip solid">preliminary</span> <span class="chip">n = 60 pilot</span> <span class="chip">r/AmItheAsshole</span> <span class="chip">builds on SUITE</span></p>
 </header>
 
 <details>
@@ -104,67 +212,55 @@ footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--border);color
 <hr>
 
 <section id="question">
-  <h2><span class="section-num">01</span>The question</h2>
-  <p>A user simulator is a model that, given some record of a person (their past posts, a profile, an interview), produces what that person would say next. The recent free-text line of work (HumanLM, Turing-RL) trains such models with reinforcement learning, where the reward is a fidelity score: an LLM judge compares the generated reply to the person's real reply and scores how close they are. The same score is then used to evaluate the trained model.</p>
-  <p>The score has an obvious face validity. A high number means the model wrote something that looks like what the person wrote. But there is a second question underneath it that has not been asked: <strong>would the score be any lower if the model had been given the wrong person?</strong></p>
-  <div class="callout">
-    <span class="label">The missing control.</span> Take the target user, replace their history with another commenter's history on the same post, and generate again. If the fidelity metric is about the person, the score should drop. If it is about the post, the genre, or the model's default voice, it will not. Nobody in the free-text simulator line has run this. We did.
-  </div>
-  <p>The gap is not "their metric is bad". It is that whether the metric is about the person at all has never been measured, and the one comparison that would measure it is missing.</p>
+  <h2><span class="section-num">01</span>Question</h2>
+  <p>HumanLM and Turing-RL train user simulators with RL. The reward is an LLM judge scoring how close the generated reply is to the person's real reply. The same score is the evaluation.</p>
+  <div class="callout"><span class="label">Missing control.</span> Give the model the wrong person's history and generate again. If the score is about the person, it drops. Nobody has checked.</div>
 </section>
 
 <section id="field">
-  <h2><span class="section-num">02</span>What the field does now</h2>
-  <p>We checked 30 papers on human and user simulation for two things: what the primary fidelity metric is, and whether any identity control is reported. The full table is in <a href="https://github.com/jajamoa/suite-metric-probe/blob/main/notes/eval-survey.md">notes/eval-survey.md</a>. Short version:</p>
+  <h2><span class="section-num">02</span>Field</h2>
+  <p>30 papers checked, full table in <a href="https://github.com/jajamoa/suite-metric-probe/blob/main/notes/eval-survey.md">notes/eval-survey.md</a>.</p>
   <div class="table-wrap">
     <table>
-      <thead><tr><th>Line of work</th><th>Output</th><th>Primary metric</th><th>Wrong-person control?</th></tr></thead>
+      <thead><tr><th>Line</th><th>Metric</th><th>Wrong-person control?</th></tr></thead>
       <tbody>
-        <tr><td>HumanLM (Wu et al. 2026)</td><td>free-text reply</td><td>LLM-judge key-point coverage, embedding cosine, judge-inferred "state" alignment</td><td>No. Reliability check swaps the judge, never the person</td></tr>
-        <tr><td>Turing-RL (Wang et al. 2026)</td><td>free-text reply</td><td>pairwise LLM Turing judge, 360-person human Turing test</td><td>No. Ablation over history / persona only; Turing score barely moves (4.31 / 4.26 / 4.23)</td></tr>
-        <tr><td>Digital twins (Park 2024, Twin-2K-500, Peng 2025)</td><td>closed survey answers</td><td>per-item accuracy normalised by test-retest</td><td>Nested ablations only (empty persona, demographics-only). Peng: full-persona twins closer to the empty-persona twin (MAD 0.175) than to their own human (0.252)</td></tr>
-        <tr><td>Population simulation (OpinionQA, Argyle, Anthology, Hewitt)</td><td>distributions</td><td>Wasserstein / correlation to group marginals</td><td>Anthology random-backstory matching is the closest analogue. Hewitt: treatment x demographic interactions r near 0</td></tr>
-        <tr><td>Kim &amp; Lee 2023</td><td>binary GSS items</td><td>AUC with learned respondent embeddings</td><td>Yes: shuffling respondent embeddings drops AUC 0.857 to 0.720. The only respondent-level permutation we found</td></tr>
+        <tr><td>HumanLM 2026</td><td>LLM-judge coverage, embedding cosine</td><td>No. Reliability check swaps the judge, not the person</td></tr>
+        <tr><td>Turing-RL 2026</td><td>pairwise LLM Turing judge</td><td>No. History / persona ablation moves the score 4.31 to 4.23</td></tr>
+        <tr><td>Digital twins (Park 2024, Twin-2K, Peng 2025)</td><td>item accuracy vs test-retest</td><td>Nested ablations only. Peng: twins closer to the empty-persona twin than to their own human</td></tr>
+        <tr><td>Population sims (OpinionQA, Argyle, Anthology, Hewitt)</td><td>distance to group marginals</td><td>Anthology random backstory is the nearest analogue</td></tr>
+        <tr><td>Kim &amp; Lee 2023</td><td>AUC, learned respondent embeddings</td><td>Yes: shuffle drops AUC 0.857 to 0.720. The only one</td></tr>
       </tbody>
     </table>
   </div>
-  <p>Three things follow. Similarity scoring is the default only for free-text simulators with a real reply as target, which is exactly where HumanLM and Turing-RL sit. No paper scores the reasoning a model gives against the reasoning the person actually gave (Park explicitly discards the reasoning field, "no ground truth for those"). And identity controls, where they exist, are one-sided: they show more data about the right person helps, never whether data about the wrong person would score as well.</p>
+  <p>Similarity is the default only for free-text simulators with a real reply as target. No paper scores generated reasoning against the person's actual reasoning.</p>
 </section>
 
 <section id="control">
-  <h2><span class="section-num">03</span>The control</h2>
-  <p>Setup, kept deliberately close to what these papers already do. Domain is r/AmItheAsshole, the same source as HumanLM's Humanual-Opinion split. For each item we have a post, a target user with a history of past comments, and the target's real comment on this post as ground truth.</p>
+  <h2><span class="section-num">03</span>Control</h2>
   <ol class="steps">
-    <li><strong>same</strong>: generate a reply given the target's own history.</li>
-    <li><strong>cross</strong>: generate a reply given another commenter's history on the same post (the donor). Same post, same instructions, wrong person.</li>
-    <li><strong>same2</strong>: generate again with the target's own history, a fresh sample. This is the noise floor.</li>
+    <li><strong>same</strong>: generate with the target's history.</li>
+    <li><strong>cross</strong>: generate with another commenter's history on the same post.</li>
+    <li><strong>same2</strong>: generate again with the target's history. Noise floor.</li>
   </ol>
-  <p>The quantity of interest is the <strong>person effect</strong>, score(same) minus score(cross), read against the <strong>noise floor</strong>, score(same) minus score(same2). A metric that cannot beat its own noise floor is not measuring the person. We report both with a user-clustered paired bootstrap (B = 4000) and summarise as a signal-to-noise ratio.</p>
-  <p>We score every generation three ways, on the same texts:</p>
-  <div class="grid">
-    <div class="card"><h3>HumanLM judge</h3><p>HumanLM's own rubric prompt: extract key points from the real reply, score coverage minus penalty. Judge model is claude-4.5-haiku, as in their paper.</p></div>
-    <div class="card"><h3>Embedding cosine</h3><p>Cosine between generated and real reply, the second HumanLM metric.</p></div>
-    <div class="card"><h3>Structured probe (SUITE)</h3><p>Stance (NTA / YTA) and warrant (which of 10 moral principles justifies the verdict), scored against labels extracted from the real comment. Both as direct MCQ and as read off the generated text.</p></div>
-  </div>
+  <p>Person effect = same − cross. Noise floor = same − same2. User-clustered paired bootstrap, B = 4000. Same texts scored three ways: HumanLM judge (their prompt, claude-4.5-haiku), embedding cosine, SUITE stance / warrant probe.</p>
 </section>
 
 <section id="results">
-  <h2><span class="section-num">04</span>Preliminary results</h2>
-  <h3>A. The structured probe sees the swap</h3>
-  <p>From SUITE (Table 2, Claude Sonnet 4.6, 3 runs). Direct MCQ answering with the target's context versus a cross-person context.</p>
+  <h2><span class="section-num">04</span>Results</h2>
+  <h3>A. Structured probe sees the swap</h3>
+  <p class="hint">SUITE Table 2, Claude Sonnet 4.6, direct MCQ, 3 runs.</p>
   <div class="table-wrap">
     <table>
-      <thead><tr><th>Probe</th><th>same-person</th><th>cross-person</th><th>drop</th><th>run-to-run std</th><th>SNR</th></tr></thead>
+      <thead><tr><th>Probe</th><th>same</th><th>cross</th><th>drop</th><th>std</th><th>SNR</th></tr></thead>
       <tbody>
-        <tr><td>warrant (4-way MCQ)</td><td>50.13</td><td>25.06 (chance)</td><td>25.1</td><td>±0.5</td><td>≈ 50</td></tr>
+        <tr><td>warrant (4-way)</td><td>50.13</td><td>25.06 (chance)</td><td>25.1</td><td>±0.5</td><td>≈ 50</td></tr>
         <tr><td>stance (NTA / YTA)</td><td>85.82</td><td>83.04</td><td>2.8</td><td>±0.5</td><td>≈ 6</td></tr>
       </tbody>
     </table>
   </div>
-  <p>Give the model the wrong person and it goes to chance on warrant. Stance barely moves, which is the first hint of where identity lives (section 05).</p>
 
-  <h3>B. The similarity metrics do not</h3>
-  <p>Our pilot: 60 items, 53 target users, generator claude-4.5-haiku, HumanLM rubric judge and embedding cosine on the generated free text.</p>
+  <h3>B. Similarity metrics do not</h3>
+  <p class="hint">Pilot: 60 items, 53 users, generator claude-4.5-haiku.</p>
   <div class="table-wrap">
     <table>
       <thead><tr><th>Metric</th><th>same</th><th>cross</th><th>same2</th><th>person effect [95% CI]</th><th>noise floor [95% CI]</th></tr></thead>
@@ -174,55 +270,48 @@ footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--border);color
       </tbody>
     </table>
   </div>
-  <p>The judge's person effect is the same size as its own resampling noise; its confidence interval covers zero. Discrimination AUC (does the metric rank the right person above the wrong one?) is 0.64 [0.53, 0.75] for the judge and 0.48 for embedding, against 0.50 for a coin. Embedding cosine is flat to the third decimal.</p>
+  <p>Judge person effect equals its own noise. AUC right-person vs wrong-person: judge 0.64 [0.53, 0.75], embedding 0.48.</p>
+  <div class="callout warn"><span class="label">Caveat.</span> Haiku fails the manipulation check: stance 0.767 in all three conditions, warrant at majority baseline. Structure read off its text is flat too (effect −0.05, noise −0.07). The texts contain no person, so no ruler can see one. Table A used Sonnet. Sonnet regeneration is queued; B will be redone on it.</div>
 
-  <div class="callout warn">
-    <span class="label">Caveat that decides the next step.</span> The pilot generator (Haiku) fails the manipulation check: its stance under swap is 0.767 in all three conditions, identical, and its warrant sits at the majority-class baseline (0.33 / 0.38 / 0.40) whether or not the person is swapped. Reading structure off Haiku's generated text also sees nothing (person effect −0.05, noise −0.07). So on this generator the three rulers agree, and they agree because the texts do not contain the person. Table A used Sonnet, which does use the context. The clean "same texts, similarity is blind, structure sees" comparison therefore needs the pilot regenerated with a Sonnet-class model. That run is queued.
-  </div>
-
-  <h3>C. The probe reads structure off real text reliably</h3>
-  <p>A reader model given only a real comment (no post, no history) recovers the SUITE ground-truth labels at <strong>98.3%</strong> for stance and <strong>65.0%</strong> for warrant (SUITE's human annotator baseline on warrant is 73%). This is the extraction ceiling for applying the structured probe to any free-text simulator's output, method 2 below.</p>
+  <h3>C. Reader ceiling</h3>
+  <p>A reader model given only the real comment recovers SUITE labels at 98.3% stance, 65.0% warrant (human baseline 73%).</p>
 </section>
 
 <section id="why">
-  <h2><span class="section-num">05</span>Why similarity is blind here</h2>
-  <p>Individual variance on a shared post lives in the justification, not the verdict. On posts with at least three commenters in the SUITE data:</p>
+  <h2><span class="section-num">05</span>Why</h2>
   <div class="table-wrap">
     <table>
-      <thead><tr><th>Layer</th><th>Entropy across commenters (bits)</th><th>Posts where all commenters agree</th></tr></thead>
+      <thead><tr><th>Layer</th><th>Entropy across commenters (bits)</th><th>Posts with unanimous commenters</th></tr></thead>
       <tbody>
-        <tr><td>stance (NTA / YTA)</td><td>0.26</td><td>65.3%</td></tr>
-        <tr><td>warrant (moral principle)</td><td>1.15</td><td>13.3%</td></tr>
+        <tr><td>stance</td><td>0.26</td><td>65.3%</td></tr>
+        <tr><td>warrant</td><td>1.15</td><td>13.3%</td></tr>
       </tbody>
     </table>
   </div>
-  <p>Two commenters on the same post usually reach the same verdict and usually reach it for different reasons. A metric that scores surface content of the reply (key points, wording, embedding neighbourhood) is scoring the verdict, the scenario facts, and the genre, all of which are shared. The part that differs between people is one clause, the warrant, and a coverage score has no reason to weight it. This also explains why the verdict-level probe (stance) moves so little under swap in Table A: there is little person to find there.</p>
+  <p>Same post, same verdict, different reasons. Similarity scores the verdict, the facts and the genre, which everyone shares. The person is one clause, the warrant.</p>
 </section>
 
 <section id="proposal">
-  <h2><span class="section-num">06</span>Proposal: score structure, not similarity</h2>
-  <p>The structured probe is not tied to MCQ-only simulators. Two ways to apply it to any free-text simulator:</p>
+  <h2><span class="section-num">06</span>Proposal</h2>
   <div class="grid-2">
-    <div class="card"><h3>Method 1: agent answers the probe</h3><p>Give the simulator the target's context and the SUITE stance and warrant questions directly (options built from the ground-truth comment plus frequent distractors). This is what SUITE does. It is the cheapest and gives Table A.</p></div>
-    <div class="card"><h3>Method 2: read the probe off the text</h3><p>Let the simulator generate freely, hand the text alone to a reader model that answers the same questions, score against ground truth. Works on HumanLM / Turing-RL outputs unchanged. Extraction ceiling 98% / 65% (section 04C).</p></div>
+    <div class="card"><h3>Method 1: agent answers the probe</h3><p>Simulator gets the context and the stance / warrant MCQ built from the real comment. This is SUITE. Gives Table A.</p></div>
+    <div class="card"><h3>Method 2: read the probe off the text</h3><p>Simulator generates freely; a reader answers the same MCQ from the text alone. Works on HumanLM / Turing-RL outputs unchanged. Ceiling 98% / 65%.</p></div>
   </div>
-  <p>Both are grounded in argumentation theory (Toulmin: claim, data, warrant) and a closed moral-principle taxonomy in the spirit of Social Chemistry; the warrant labels are discrete, extracted by multi-model vote with human review. The claim is that a fidelity signal for training and evaluating user simulators should be a structural one: it should move when the person changes and stay put when only the sample changes. Similarity signals fail the first test; the warrant probe passes it by a factor of fifty.</p>
-  <p>A consequence for training: HumanLM and Turing-RL use the similarity score as the RL reward. If the reward does not move under a person swap, the policy is being trained toward a target that is the same for everyone.</p>
+  <p>A fidelity signal should move when the person changes and hold when only the sample changes. Warrant passes by 50x. Similarity fails. And similarity is the RL reward in both papers.</p>
 </section>
 
 <section id="next">
-  <h2><span class="section-num">07</span>Next steps</h2>
+  <h2><span class="section-num">07</span>Next</h2>
   <ol class="steps">
-    <li>Regenerate the 60-item pilot with Sonnet 4.6 (same / cross / same2) so the three rulers can be compared on texts that pass the manipulation check.</li>
-    <li>Scale to about 200 items, 3 seeds, and report SNR per metric.</li>
-    <li>Real-vs-real Turing check: give the judge the target's history and ask it to pick between the target's real comment and the donor's real comment. Turing-RL's judge should get this right if it is about the person.</li>
-    <li>Run the person swap on HumanLM's public Humanual-Opinion test split, scored with their released judge prompt, so the result is on their data.</li>
-    <li>Score HumanLM's released model outputs with method 2.</li>
+    <li>Regenerate the pilot with Sonnet 4.6, redo B on texts that pass the manipulation check.</li>
+    <li>Scale to ~200 items, 3 seeds, SNR per metric.</li>
+    <li>Real-vs-real Turing check: judge picks target's real comment vs donor's, given target history.</li>
+    <li>Person swap on HumanLM's public Humanual-Opinion test split with their judge prompt.</li>
   </ol>
 </section>
 
 <footer>
-  <p>Chance Li, MIT · code and data at <a href="https://github.com/jajamoa/suite-metric-probe">github.com/jajamoa/suite-metric-probe</a> · references: HumanLM (arXiv 2603.03303), Turing-RL (arXiv 2606.19336), SUITE (COLM 2026)</p>
+  <p>Chance Li, MIT · <a href="https://github.com/jajamoa/suite-metric-probe">github.com/jajamoa/suite-metric-probe</a> · HumanLM arXiv 2603.03303 · Turing-RL arXiv 2606.19336 · SUITE</p>
 </footer>
 
 <script>
