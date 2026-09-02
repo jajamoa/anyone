@@ -149,43 +149,44 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   <h2>A worked example</h2>
   <p class="body"><strong>The post.</strong> A first-year teacher and mother of three skips a once-a-year gathering with her mother-in-law&rsquo;s cousins to rest and study for certification. The mother-in-law is upset. AITA?</p>
   <div class="card" style="margin-top:6px"><div class="csub">TARGET&rsquo;S REAL COMMENT (GROUND TRUTH)</div><p>&ldquo;NTA. You need down time. It&rsquo;s sad you couldn&rsquo;t go, but your mental health and physical health matter more. If she can&rsquo;t understand, that&rsquo;s on her. I hope you&rsquo;re able to find a balance, though, because you need to be able to rest more and not be so run down.&rdquo;</p><p style="margin-top:8px"><b>Stance:</b> NTA &nbsp;&middot;&nbsp; <b>Warrant:</b> care / harm (her health comes first)</p></div>
-<svg viewBox="0 0 880 400" xmlns="http://www.w3.org/2000/svg" font-family="Inconsolata, ui-monospace, monospace" font-size="13" style="width:100%;display:block;margin-top:16px">
-<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4f4e49"/></marker></defs>
+<svg viewBox="0 0 940 432" xmlns="http://www.w3.org/2000/svg" font-family="Inconsolata, ui-monospace, monospace" font-size="12" style="width:100%;display:block;margin-top:16px">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" style="fill:#4f4e49"/></marker></defs>
 <style>
- .bx{fill:#fff;stroke:#4f4e49;stroke-width:1.1}.bx.in{fill:#f2f2f0}.bx.gt{fill:#fff;stroke-dasharray:3 2}
- .t{fill:#111110}.m{fill:#96948d;font-size:11.5px}.k{fill:#6f6f6b;font-size:11.5px;font-weight:700;letter-spacing:.12em}
- .a{stroke:#4f4e49;stroke-width:1.1;fill:none;marker-end:url(#ar)}.big{font-size:18px;font-weight:800}
+ .bx{fill:#fff;stroke:#4f4e49;stroke-width:1.1}.bx.in{fill:#f7f7f5}.bx.gt{fill:#fff;stroke-dasharray:3 2}
+ .t{fill:#111110}.m{fill:#96948d;font-size:11px}.k{fill:#6f6f6b;font-size:11.5px;font-weight:700;letter-spacing:.12em}
+ .a{stroke:#4f4e49;stroke-width:1.1;fill:none;marker-end:url(#ar)}.big{font-size:16px;font-weight:800}
 </style>
 <text x="0" y="14" class="k">TODAY: SIMILARITY</text>
-<rect x="0" y="30" width="150" height="40" class="bx in"/><text x="75" y="48" text-anchor="middle" class="t">target's own history</text><text x="75" y="63" text-anchor="middle" class="m">same person</text>
-<rect x="0" y="90" width="150" height="40" class="bx in"/><text x="75" y="108" text-anchor="middle" class="t">another commenter's</text><text x="75" y="123" text-anchor="middle" class="m">history on this post</text>
-<rect x="190" y="60" width="90" height="40" class="bx"/><text x="235" y="84" text-anchor="middle" class="t">simulator</text>
-<path d="M150 50 L190 72" class="a"/><path d="M150 110 L190 88" class="a"/>
-<rect x="320" y="30" width="120" height="40" class="bx"/><text x="380" y="48" text-anchor="middle" class="t">free text A</text><text x="380" y="63" text-anchor="middle" class="m">"...empty cup..."</text>
-<rect x="320" y="90" width="120" height="40" class="bx"/><text x="380" y="108" text-anchor="middle" class="t">free text B</text><text x="380" y="123" text-anchor="middle" class="m">"...empty cup..."</text>
-<path d="M280 72 L320 50" class="a"/><path d="M280 88 L320 110" class="a"/>
-<rect x="480" y="60" width="110" height="40" class="bx"/><text x="535" y="78" text-anchor="middle" class="t">LLM judge</text><text x="535" y="93" text-anchor="middle" class="m">key-point coverage</text>
-<rect x="480" y="120" width="110" height="32" class="bx gt"/><text x="535" y="140" text-anchor="middle" class="m">target's real comment</text>
-<path d="M535 120 L535 100" class="a"/>
-<path d="M440 50 L480 72" class="a"/><path d="M440 110 L480 88" class="a"/>
-<path d="M590 72 L630 50" class="a"/><path d="M590 88 L630 110" class="a"/>
-<text x="640" y="56" class="big t">0.81</text><text x="640" y="116" class="big t">0.85</text>
-<text x="700" y="56" class="m">right person</text><text x="700" y="116" class="m">other person, scores higher</text>
-<text x="640" y="150" class="m">judge rerun on the same pair: 0.88 / 0.79. The gap is the judge's own noise.</text>
+<rect x="0" y="30" width="180" height="44" class="bx in" style="stroke:#2f7d3a"/><text x="90" y="48" text-anchor="middle" class="t" style="fill:#2f7d3a">same person</text><text x="90" y="65" text-anchor="middle" class="m">the target's own history</text>
+<rect x="0" y="98" width="180" height="44" class="bx in" style="stroke:#b8322a"/><text x="90" y="116" text-anchor="middle" class="t" style="fill:#b8322a">different person</text><text x="90" y="133" text-anchor="middle" class="m">another commenter's</text>
+<rect x="220" y="65" width="100" height="42" class="bx"/><text x="270" y="90" text-anchor="middle" class="t">simulator</text>
+<path d="M180 52 L220 78" class="a"/><path d="M180 120 L220 94" class="a"/>
+<rect x="360" y="30" width="150" height="44" class="bx" style="stroke:#2f7d3a"/><text x="435" y="48" text-anchor="middle" class="t">free text A</text><text x="435" y="65" text-anchor="middle" class="m">"...empty cup..."</text>
+<rect x="360" y="98" width="150" height="44" class="bx" style="stroke:#b8322a"/><text x="435" y="116" text-anchor="middle" class="t">free text B</text><text x="435" y="133" text-anchor="middle" class="m">"...empty cup..."</text>
+<path d="M320 78 L360 52" class="a"/><path d="M320 94 L360 120" class="a"/>
+<rect x="550" y="65" width="130" height="42" class="bx"/><text x="615" y="83" text-anchor="middle" class="t">LLM judge</text><text x="615" y="99" text-anchor="middle" class="m">key-point coverage</text>
+<rect x="550" y="134" width="130" height="40" class="bx gt"/><text x="615" y="150" text-anchor="middle" class="m">the target's</text><text x="615" y="165" text-anchor="middle" class="m">real comment</text>
+<path d="M615 134 L615 109" class="a"/>
+<path d="M510 52 L550 78" class="a"/><path d="M510 120 L550 94" class="a"/>
+<path d="M680 78 L712 52" class="a"/><path d="M680 94 L712 120" class="a"/>
+<text x="720" y="56" class="big t">0.81</text><text x="720" y="72" class="m" style="fill:#2f7d3a">same person</text>
+<text x="720" y="124" class="big t">0.85</text><text x="720" y="140" class="m" style="fill:#b8322a">different person, higher</text>
+<text x="0" y="192" class="m">A judge rerun on the same pair gives 0.88 / 0.79. The gap between A and B is the judge's own noise.</text>
 
-<text x="0" y="214" class="k">OURS: STRUCTURED PROBE</text>
-<rect x="0" y="230" width="150" height="40" class="bx in"/><text x="75" y="248" text-anchor="middle" class="t">target's own history</text><text x="75" y="263" text-anchor="middle" class="m">same person</text>
-<rect x="0" y="290" width="150" height="40" class="bx in"/><text x="75" y="308" text-anchor="middle" class="t">another commenter's</text><text x="75" y="323" text-anchor="middle" class="m">history on this post</text>
-<rect x="190" y="260" width="90" height="40" class="bx"/><text x="235" y="284" text-anchor="middle" class="t">simulator</text>
-<path d="M150 250 L190 272" class="a"/><path d="M150 310 L190 288" class="a"/>
-<rect x="320" y="260" width="150" height="40" class="bx"/><text x="395" y="278" text-anchor="middle" class="t">answers the MCQ</text><text x="395" y="293" text-anchor="middle" class="m">verdict + which principle</text>
-<rect x="320" y="320" width="150" height="32" class="bx gt"/><text x="395" y="340" text-anchor="middle" class="m">MCQ built from the real comment</text>
-<path d="M395 320 L395 300" class="a"/>
-<path d="M280 280 L320 280" class="a"/>
-<path d="M470 272 L630 250" class="a"/><path d="M470 288 L630 310" class="a"/>
-<text x="640" y="256" class="big t">B. care / harm</text><text x="640" y="316" class="big t">C. property / consent</text>
-<text x="800" y="256" class="m">= real</text><text x="840" y="316" class="m">wrong</text>
-<text x="640" y="350" class="m">or hand free text A / B to a reader that answers the same MCQ (method 2).</text>
+<text x="0" y="246" class="k">OURS: STRUCTURED PROBE</text>
+<rect x="0" y="262" width="180" height="44" class="bx in" style="stroke:#2f7d3a"/><text x="90" y="280" text-anchor="middle" class="t" style="fill:#2f7d3a">same person</text><text x="90" y="297" text-anchor="middle" class="m">the target's own history</text>
+<rect x="0" y="330" width="180" height="44" class="bx in" style="stroke:#b8322a"/><text x="90" y="348" text-anchor="middle" class="t" style="fill:#b8322a">different person</text><text x="90" y="365" text-anchor="middle" class="m">another commenter's</text>
+<rect x="220" y="297" width="100" height="42" class="bx"/><text x="270" y="322" text-anchor="middle" class="t">simulator</text>
+<path d="M180 284 L220 310" class="a"/><path d="M180 352 L220 326" class="a"/>
+<rect x="360" y="297" width="160" height="42" class="bx"/><text x="440" y="315" text-anchor="middle" class="t">answers the MCQ</text><text x="440" y="331" text-anchor="middle" class="m">verdict + principle</text>
+<rect x="360" y="366" width="160" height="40" class="bx gt"/><text x="440" y="382" text-anchor="middle" class="m">MCQ built from</text><text x="440" y="397" text-anchor="middle" class="m">the real comment</text>
+<path d="M440 366 L440 341" class="a"/>
+<path d="M320 318 L360 318" class="a"/>
+<path d="M520 310 L712 284" class="a"/><path d="M520 326 L712 352" class="a"/>
+<text x="720" y="288" class="big t">B. care / harm</text><text x="720" y="304" class="m" style="fill:#2f7d3a">same person: the real reason</text>
+<text x="720" y="356" class="big t">C. property / consent</text><text x="720" y="372" class="m" style="fill:#b8322a">different person: wrong</text>
+<text x="0" y="424" class="m">Or hand free text A / B to a reader model that answers the same MCQ. Works on any simulator's output.</text>
+
 </svg>
   <div class="cards" style="margin-top:22px">
     <div class="card"><h3>Free text A</h3><div class="csub">GIVEN THE TARGET&rsquo;S OWN HISTORY &middot; JUDGE 0.81</div><p>&ldquo;NTA. You&rsquo;re a new teacher, a mom of three, and a wife. You&rsquo;re already doing the work of like five people. Your MIL needs to understand that you hitting a wall isn&rsquo;t personal, it&rsquo;s survival. <mark>You can&rsquo;t pour from an empty cup</mark>, and right now yours is bone dry. Your husband gets it. That&rsquo;s what matters. [&hellip;] If your MIL can&rsquo;t respect a boundary as reasonable as this one, that&rsquo;s on her, not you.&rdquo;</p></div>
