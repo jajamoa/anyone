@@ -124,7 +124,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   <p class="heronote"><a href="mailto:jiajie@mit.edu">jiajie@mit.edu</a></p>
   <div class="tldrbox">
     <p><b class="lb">Finding</b> Free-text user simulators (HumanLM, Turing-RL) are trained and scored by an LLM judge comparing the generated reply to the person&rsquo;s real one. Feed the model <strong>someone else&rsquo;s</strong> history and the score does not move. Ask instead which principle the person would cite, and accuracy drops from 50% to 25%, no better than guessing among four options.</p>
-    <p><b class="lb">Intuition</b> Embedding similarity and LLM-as-judge lack discriminant validity across persons. HumanLM already tries to score meaning rather than wording, but it leaves the meaning inside free text and asks a model to compare two passages. The meaning should be pulled out into a fixed structure, a verdict and a principle, and compared there.</p>
+    <p><b class="lb">Intuition</b> Embedding similarity and LLM-as-judge lack discriminant validity across persons. Meaning should be extracted into structure before it is compared, not compared as free text.</p>
   </div>
   <div class="btns">
     <a class="btn primary soon" href="#">Paper (soon)</a>
