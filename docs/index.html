@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Wrong Person Scores the Same · MIT</title>
+<title>Anyone Scores the Same · MIT</title>
 <meta name="description" content="User-simulator fidelity metrics never checked whose response they reward. A cross-person control: similarity metrics are blind to the person, structured warrant probes are not.">
-<meta property="og:title" content="The Wrong Person Scores the Same">
+<meta property="og:title" content="Anyone Scores the Same">
 <meta property="og:description" content="User-simulator metrics never checked whose response they reward. We run the missing control.">
 <meta property="og:image" content="https://jajamoa.github.io/suite-metric-probe/assets/teaser.svg">
 <style>
@@ -106,7 +106,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 <body>
 
 <div class="topbar"><div class="wrap">
-  <b>WRONG PERSON</b>
+  <b>ANYONE</b>
   <nav>
     <a href="#example">Example</a>
     <a href="#results">Results</a>
@@ -118,12 +118,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <header class="hero wrap">
   <div class="kickerline">Preprint &middot; work in progress &middot; 2026</div>
-  <h1>The Wrong Person Scores the Same: <span class="h1a">User-Simulator Metrics Never Checked Whose Response They Reward</span></h1>
+  <h1>Anyone Scores the Same: <span class="h1a">User-Simulator Metrics Never Checked Whose Response They Reward</span></h1>
   <p class="heroauthors">Chance Jiajie Li<sup>1</sup></p>
   <p class="heroaffils"><sup>1</sup>Massachusetts Institute of Technology</p>
   <p class="heronote"><a href="mailto:jiajie@mit.edu">jiajie@mit.edu</a></p>
   <div class="tldrbox">
-    <p><b class="lb">Finding</b> Free-text user simulators (HumanLM, Turing-RL) are trained and scored by an LLM judge comparing the generated reply to the person&rsquo;s real one. Feed the model the <strong>wrong person</strong> and the score does not move. A structured probe of the person&rsquo;s <strong>reasoning</strong> drops from 50 to chance.</p>
+    <p><b class="lb">Finding</b> Free-text user simulators (HumanLM, Turing-RL) are trained and scored by an LLM judge comparing the generated reply to the person&rsquo;s real one. Feed the model <strong>someone else&rsquo;s</strong> history and the score does not move. A structured probe of the person&rsquo;s <strong>reasoning</strong> drops from 50 to chance.</p>
     <p><b class="lb">Intuition</b> Embedding similarity and LLM-as-judge lack discriminant validity across persons: they reward what everyone on a post shares. Commenters on a post mostly agree on the verdict and give different reasons, and the rubric never asks for the reason.</p>
   </div>
   <div class="btns">
@@ -222,7 +222,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   <h2>Design</h2>
   <div class="steps">
     <div class="step"><div class="sh">SAME</div>Generate with the target&rsquo;s own comment history.</div>
-    <div class="step"><div class="sh">CROSS</div>Generate with another commenter&rsquo;s history on the same post. Wrong person, same post.</div>
+    <div class="step"><div class="sh">CROSS</div>Generate with another commenter&rsquo;s history on the same post. Different person, same post.</div>
     <div class="step"><div class="sh">SAME2</div>Generate again with the target&rsquo;s history. This is the noise floor.</div>
   </div>
   <p class="body" style="margin-top:16px">Person effect = same &minus; cross; noise floor = same &minus; same2; user-clustered bootstrap. Each text is scored by HumanLM&rsquo;s judge, embedding cosine, and the SUITE probe (stance NTA / YTA; warrant, one of ten moral principles), against labels from the real comment.</p>
@@ -301,8 +301,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <section class="wrap" id="bibtex">
   <div class="kicker">Citation</div>
-<pre>@misc{li2026wrongperson,
-  title  = {The Wrong Person Scores the Same: User-Simulator Metrics
+<pre>@misc{li2026anyone,
+  title  = {Anyone Scores the Same: User-Simulator Metrics
             Never Checked Whose Response They Reward},
   author = {Li, Chance Jiajie},
   year   = {2026},
@@ -311,7 +311,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 </section>
 
 <footer><div class="wrap">
-  <span>Wrong Person &middot; 2026</span>
+  <span>Anyone &middot; 2026</span>
   <span><a href="https://github.com/jajamoa/suite-metric-probe" target="_blank" rel="noopener">github.com/jajamoa/suite-metric-probe</a></span>
 </div></footer>
 </body>
