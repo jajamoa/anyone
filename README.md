@@ -43,14 +43,37 @@ Three more runs sit next to the main one, each with the same four output files (
 | `data/humanlm_pipeline/` | HumanLM's own generation pipeline: a Haiku-written user profile (`src/persona.py`, their prompt verbatim) and their system prompt, temperature 0.4 (`src/simulate.py`) |
 | `data/humanlm_history/` | the same, with the 20 history comments appended to the profile (`src/simulate.py --with-history`) |
 
-`data/humanlm_pipeline/personas.json` quotes the users' comments and is not distributed. `src/judge_humanlm.py`, `probe.py` and `embed.py` take the run directory as their first argument.
+`data/humanlm_pipeline/personas.json` quotes the users' comments and is not distributed.
+
+### SUITE replication
+
+`src/suite_mcq.py` is SUITE's MCQ protocol ported from `ZhenzeMo/suite_colm` (`mcq_evaluator.py`): their system and user prompts, temperature 0.1, and the forced `submit_answer` tool call, run against Claude. `bench` mode reads SUITE's own benchmark (`ext/suite_colm/benchmark/colm-benchmark/*/6000`, private, ask for access) and reproduces their conditions plus one of ours:
+
+| condition | history given to the model |
+|---|---|
+| `no_context` | none |
+| `self-random` | the target's own comments, random order |
+| `self-warrantaligned` | the target's own comments, those sharing the question's answer warrant first (SUITE's "same") |
+| `shuffle-warrantaligned` | SUITE's cross: the pool user with the strongest dominant warrant different from the answer; in practice one or two donors serve every target |
+| `derange-warrantaligned` | ours: a derangement over the run's users, donor history aligned to the donor's own dominant warrant |
+
+`src/build_suite_items.py` builds free-text items on the same posts and histories (`data/suite_wa/` with SUITE's shuffle donor, `data/suite_wa_derange/` with the derangement), so `generate.py` / `judge_humanlm.py` / `probe.py` / `embed.py` run on them unchanged. Results:
+
+| dir | what |
+|---|---|
+| `data/suite_protocol/items_sonnet.json` | SUITE protocol, Sonnet, on the 60 pilot items (`same` / `cross` / `no_context`) |
+| `data/suite_protocol/bench_sonnet.json` | SUITE benchmark, 20 users (seed 13), four SUITE conditions |
+| `data/suite_protocol/bench_sonnet_derange.json` | the same 20 users, `derange-warrantaligned` |
+| `data/suite_wa/`, `data/suite_wa_derange/` | free text (Sonnet) on those 80 posts, judged the same way as the pilot |
+
+`contexts.json` and `users.json` in those dirs hold the histories and the pseudonym map and are not distributed. `generate.py` and `suite_mcq.py` checkpoint as they go (`generations.partial.json`, `*.partial.jsonl`) and resume on rerun. `src/judge_humanlm.py`, `probe.py` and `embed.py` take the run directory as their first argument.
 
 Users are pseudonymized (`user_NNN`) and posts are hashed. The histories are other people's Reddit comment histories and are not distributed; they derive from the SUITE corpus, ask for access.
 
 ## Layout
 
 - `notebooks/anyone.ipynb` the analysis, with outputs
-- `src/` the five pipeline steps, the HumanLM-pipeline variant (`persona.py`, `simulate.py`), the appendix renderer (`render_items.py`), and a small API client
+- `src/` the five pipeline steps, the HumanLM-pipeline variant (`persona.py`, `simulate.py`), the SUITE replication (`suite_mcq.py`, `build_suite_items.py`), the appendix renderer (`render_items.py`), and a small API client
 - `data/` frozen inputs and outputs
 - `docs/` project page (GitHub Pages); `docs/items.html` is the appendix, rebuilt by `python3 src/render_items.py`
 - `notes/eval-survey.md` how 30 simulator papers validate fidelity

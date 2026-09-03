@@ -7,3 +7,5 @@ __pycache__/
 .ipynb_checkpoints/
 .vercel
 data/humanlm_pipeline/personas.json
+data/*/contexts.json
+data/*/users.json

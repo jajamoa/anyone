@@ -8,7 +8,7 @@ Under same and cross the simulator also answers the stance / warrant questions
 directly (Method 1). Writes <dir>/generations.json (default data/). Needs data/contexts.json,
 which holds the histories and is not distributed.
 """
-import json, re, sys
+import json, os, re, sys
 from api import call, pmap, report
 
 D = sys.argv[1] if len(sys.argv) > 1 else "data"  # output dir; SUITE_MODEL picks the simulator
@@ -22,8 +22,9 @@ MCQ = ("You are predicting how one specific Reddit user would judge a new r/AmIt
        "and not for the community consensus.")
 TEMPERATURE = 0.1
 
-items = json.load(open("data/items.json"))
-contexts = json.load(open("data/contexts.json"))
+I = D if os.path.exists(f"{D}/items.json") else "data"  # a data dir may carry its own items / contexts
+items = json.load(open(f"{I}/items.json"))
+contexts = json.load(open(f"{I}/contexts.json"))
 
 
 def parse_mcq(text, options):
@@ -54,6 +55,19 @@ def run(it):
 
 
 if __name__ == "__main__":
-    gens = dict(pmap(run, items))
+    # resumable: finished items are kept in <dir>/generations.partial.json
+    part = f"{D}/generations.partial.json"
+    done = json.load(open(part)) if os.path.exists(part) else {}
+    _lock = __import__("threading").Lock()
+
+    def run_ck(it):
+        if it["item_id"] in done:
+            return it["item_id"], done[it["item_id"]]
+        k, out = run(it)
+        with _lock:
+            done[k] = out
+            json.dump(done, open(part, "w"), indent=1, ensure_ascii=False)
+        return k, out
+    gens = dict(pmap(run_ck, items))
     json.dump(gens, open(f"{D}/generations.json", "w"), indent=1, ensure_ascii=False)
     report(f"generated {len(gens)} items x 3")

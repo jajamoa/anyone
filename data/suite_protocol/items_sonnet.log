@@ -1,0 +1,8 @@
+360 calls, model claude-sonnet-4-6
+cross                    stance   n=  60 acc=0.850
+cross                    warrant  n=  60 acc=0.483
+no_context               stance   n=  60 acc=0.850
+no_context               warrant  n=  60 acc=0.533
+same                     stance   n=  60 acc=0.800
+same                     warrant  n=  60 acc=0.550
+items: 360 calls, $7.57

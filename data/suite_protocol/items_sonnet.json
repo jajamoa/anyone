@@ -1,0 +1,3606 @@
+{
+ "model": "claude-sonnet-4-6",
+ "temperature": 0.1,
+ "results": [
+  {
+   "cond": "same",
+   "user": "user_108",
+   "item_id": "52d196424a125548_user_108",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "same",
+   "user": "user_108",
+   "item_id": "52d196424a125548_user_108",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "C",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_108",
+   "item_id": "52d196424a125548_user_108",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "cross",
+   "user": "user_108",
+   "item_id": "52d196424a125548_user_108",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "C",
+   "correct": false,
+   "ctx_items": 21
+  },
+  {
+   "cond": "no_context",
+   "user": "user_108",
+   "item_id": "52d196424a125548_user_108",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_108",
+   "item_id": "52d196424a125548_user_108",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "C",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_084",
+   "item_id": "d3489e123a8c4900_user_084",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "same",
+   "user": "user_084",
+   "item_id": "d3489e123a8c4900_user_084",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_084",
+   "item_id": "d3489e123a8c4900_user_084",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_084",
+   "item_id": "d3489e123a8c4900_user_084",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "C",
+   "correct": false,
+   "ctx_items": 23
+  },
+  {
+   "cond": "no_context",
+   "user": "user_084",
+   "item_id": "d3489e123a8c4900_user_084",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_084",
+   "item_id": "d3489e123a8c4900_user_084",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_686",
+   "item_id": "e7d3d4b285d363ed_user_686",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 24
+  },
+  {
+   "cond": "same",
+   "user": "user_686",
+   "item_id": "e7d3d4b285d363ed_user_686",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 24
+  },
+  {
+   "cond": "cross",
+   "user": "user_686",
+   "item_id": "e7d3d4b285d363ed_user_686",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_686",
+   "item_id": "e7d3d4b285d363ed_user_686",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "no_context",
+   "user": "user_686",
+   "item_id": "e7d3d4b285d363ed_user_686",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_686",
+   "item_id": "e7d3d4b285d363ed_user_686",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_545",
+   "item_id": "6b076a0e5a217135_user_545",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "same",
+   "user": "user_545",
+   "item_id": "6b076a0e5a217135_user_545",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_545",
+   "item_id": "6b076a0e5a217135_user_545",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_545",
+   "item_id": "6b076a0e5a217135_user_545",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "no_context",
+   "user": "user_545",
+   "item_id": "6b076a0e5a217135_user_545",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_545",
+   "item_id": "6b076a0e5a217135_user_545",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_547",
+   "item_id": "317393b03115f2aa_user_547",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 20
+  },
+  {
+   "cond": "same",
+   "user": "user_547",
+   "item_id": "317393b03115f2aa_user_547",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 20
+  },
+  {
+   "cond": "cross",
+   "user": "user_547",
+   "item_id": "317393b03115f2aa_user_547",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "cross",
+   "user": "user_547",
+   "item_id": "317393b03115f2aa_user_547",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 21
+  },
+  {
+   "cond": "no_context",
+   "user": "user_547",
+   "item_id": "317393b03115f2aa_user_547",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_547",
+   "item_id": "317393b03115f2aa_user_547",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_291",
+   "item_id": "ce5de41c38a3e0dd_user_291",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "same",
+   "user": "user_291",
+   "item_id": "ce5de41c38a3e0dd_user_291",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_291",
+   "item_id": "ce5de41c38a3e0dd_user_291",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 20
+  },
+  {
+   "cond": "cross",
+   "user": "user_291",
+   "item_id": "ce5de41c38a3e0dd_user_291",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 20
+  },
+  {
+   "cond": "no_context",
+   "user": "user_291",
+   "item_id": "ce5de41c38a3e0dd_user_291",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_291",
+   "item_id": "ce5de41c38a3e0dd_user_291",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_392",
+   "item_id": "e0eedf4099ab20f1_user_392",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 20
+  },
+  {
+   "cond": "same",
+   "user": "user_392",
+   "item_id": "e0eedf4099ab20f1_user_392",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 20
+  },
+  {
+   "cond": "cross",
+   "user": "user_392",
+   "item_id": "e0eedf4099ab20f1_user_392",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 24
+  },
+  {
+   "cond": "cross",
+   "user": "user_392",
+   "item_id": "e0eedf4099ab20f1_user_392",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 24
+  },
+  {
+   "cond": "no_context",
+   "user": "user_392",
+   "item_id": "e0eedf4099ab20f1_user_392",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_392",
+   "item_id": "e0eedf4099ab20f1_user_392",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_423",
+   "item_id": "ce6b435c43a2180c_user_423",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 23
+  },
+  {
+   "cond": "same",
+   "user": "user_423",
+   "item_id": "ce6b435c43a2180c_user_423",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_423",
+   "item_id": "ce6b435c43a2180c_user_423",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_423",
+   "item_id": "ce6b435c43a2180c_user_423",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 23
+  },
+  {
+   "cond": "no_context",
+   "user": "user_423",
+   "item_id": "ce6b435c43a2180c_user_423",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_423",
+   "item_id": "ce6b435c43a2180c_user_423",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_667",
+   "item_id": "a9fc4eb04ddb86c1_user_667",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 19
+  },
+  {
+   "cond": "same",
+   "user": "user_667",
+   "item_id": "a9fc4eb04ddb86c1_user_667",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 19
+  },
+  {
+   "cond": "cross",
+   "user": "user_667",
+   "item_id": "a9fc4eb04ddb86c1_user_667",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_667",
+   "item_id": "a9fc4eb04ddb86c1_user_667",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "C",
+   "correct": false,
+   "ctx_items": 23
+  },
+  {
+   "cond": "no_context",
+   "user": "user_667",
+   "item_id": "a9fc4eb04ddb86c1_user_667",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_667",
+   "item_id": "a9fc4eb04ddb86c1_user_667",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "C",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_363",
+   "item_id": "8f3668b10f2ec2d1_user_363",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "same",
+   "user": "user_363",
+   "item_id": "8f3668b10f2ec2d1_user_363",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_363",
+   "item_id": "8f3668b10f2ec2d1_user_363",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "cross",
+   "user": "user_363",
+   "item_id": "8f3668b10f2ec2d1_user_363",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "no_context",
+   "user": "user_363",
+   "item_id": "8f3668b10f2ec2d1_user_363",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_363",
+   "item_id": "8f3668b10f2ec2d1_user_363",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_518",
+   "item_id": "93f2bc7ea062e7b3_user_518",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "same",
+   "user": "user_518",
+   "item_id": "93f2bc7ea062e7b3_user_518",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_518",
+   "item_id": "93f2bc7ea062e7b3_user_518",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 24
+  },
+  {
+   "cond": "cross",
+   "user": "user_518",
+   "item_id": "93f2bc7ea062e7b3_user_518",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 24
+  },
+  {
+   "cond": "no_context",
+   "user": "user_518",
+   "item_id": "93f2bc7ea062e7b3_user_518",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_518",
+   "item_id": "93f2bc7ea062e7b3_user_518",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_469",
+   "item_id": "22265a466845a637_user_469",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 20
+  },
+  {
+   "cond": "same",
+   "user": "user_469",
+   "item_id": "22265a466845a637_user_469",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 20
+  },
+  {
+   "cond": "cross",
+   "user": "user_469",
+   "item_id": "22265a466845a637_user_469",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_469",
+   "item_id": "22265a466845a637_user_469",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "no_context",
+   "user": "user_469",
+   "item_id": "22265a466845a637_user_469",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_469",
+   "item_id": "22265a466845a637_user_469",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_262",
+   "item_id": "31569e197108d070_user_262",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "same",
+   "user": "user_262",
+   "item_id": "31569e197108d070_user_262",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_262",
+   "item_id": "31569e197108d070_user_262",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_262",
+   "item_id": "31569e197108d070_user_262",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 23
+  },
+  {
+   "cond": "no_context",
+   "user": "user_262",
+   "item_id": "31569e197108d070_user_262",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_262",
+   "item_id": "31569e197108d070_user_262",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_059",
+   "item_id": "e10615efd15dcef3_user_059",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "same",
+   "user": "user_059",
+   "item_id": "e10615efd15dcef3_user_059",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "D",
+   "correct": false,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_059",
+   "item_id": "e10615efd15dcef3_user_059",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_059",
+   "item_id": "e10615efd15dcef3_user_059",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "D",
+   "correct": false,
+   "ctx_items": 23
+  },
+  {
+   "cond": "no_context",
+   "user": "user_059",
+   "item_id": "e10615efd15dcef3_user_059",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_059",
+   "item_id": "e10615efd15dcef3_user_059",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "D",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_202",
+   "item_id": "e1c4859dc93a4c43_user_202",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 24
+  },
+  {
+   "cond": "same",
+   "user": "user_202",
+   "item_id": "e1c4859dc93a4c43_user_202",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 24
+  },
+  {
+   "cond": "cross",
+   "user": "user_202",
+   "item_id": "e1c4859dc93a4c43_user_202",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 20
+  },
+  {
+   "cond": "cross",
+   "user": "user_202",
+   "item_id": "e1c4859dc93a4c43_user_202",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 20
+  },
+  {
+   "cond": "no_context",
+   "user": "user_202",
+   "item_id": "e1c4859dc93a4c43_user_202",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_202",
+   "item_id": "e1c4859dc93a4c43_user_202",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_293",
+   "item_id": "1e83b2f1c4c63eff_user_293",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "same",
+   "user": "user_293",
+   "item_id": "1e83b2f1c4c63eff_user_293",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_293",
+   "item_id": "1e83b2f1c4c63eff_user_293",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_293",
+   "item_id": "1e83b2f1c4c63eff_user_293",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "no_context",
+   "user": "user_293",
+   "item_id": "1e83b2f1c4c63eff_user_293",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_293",
+   "item_id": "1e83b2f1c4c63eff_user_293",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_358",
+   "item_id": "0bef1a6c9a2b3b6f_user_358",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "same",
+   "user": "user_358",
+   "item_id": "0bef1a6c9a2b3b6f_user_358",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_358",
+   "item_id": "0bef1a6c9a2b3b6f_user_358",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 20
+  },
+  {
+   "cond": "cross",
+   "user": "user_358",
+   "item_id": "0bef1a6c9a2b3b6f_user_358",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 20
+  },
+  {
+   "cond": "no_context",
+   "user": "user_358",
+   "item_id": "0bef1a6c9a2b3b6f_user_358",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_358",
+   "item_id": "0bef1a6c9a2b3b6f_user_358",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_475",
+   "item_id": "e865aef322a8db52_user_475",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "same",
+   "user": "user_475",
+   "item_id": "e865aef322a8db52_user_475",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_475",
+   "item_id": "e865aef322a8db52_user_475",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "cross",
+   "user": "user_475",
+   "item_id": "e865aef322a8db52_user_475",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 21
+  },
+  {
+   "cond": "no_context",
+   "user": "user_475",
+   "item_id": "e865aef322a8db52_user_475",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_475",
+   "item_id": "e865aef322a8db52_user_475",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_228",
+   "item_id": "5ff24b9cc85c2353_user_228",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "same",
+   "user": "user_228",
+   "item_id": "5ff24b9cc85c2353_user_228",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "cross",
+   "user": "user_228",
+   "item_id": "5ff24b9cc85c2353_user_228",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "cross",
+   "user": "user_228",
+   "item_id": "5ff24b9cc85c2353_user_228",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "no_context",
+   "user": "user_228",
+   "item_id": "5ff24b9cc85c2353_user_228",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_228",
+   "item_id": "5ff24b9cc85c2353_user_228",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_454",
+   "item_id": "e684fdb39beb6e95_user_454",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "same",
+   "user": "user_454",
+   "item_id": "e684fdb39beb6e95_user_454",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_454",
+   "item_id": "e684fdb39beb6e95_user_454",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_454",
+   "item_id": "e684fdb39beb6e95_user_454",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "no_context",
+   "user": "user_454",
+   "item_id": "e684fdb39beb6e95_user_454",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_454",
+   "item_id": "e684fdb39beb6e95_user_454",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_539",
+   "item_id": "a963e0a9e4edba25_user_539",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 24
+  },
+  {
+   "cond": "same",
+   "user": "user_539",
+   "item_id": "a963e0a9e4edba25_user_539",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 24
+  },
+  {
+   "cond": "cross",
+   "user": "user_539",
+   "item_id": "a963e0a9e4edba25_user_539",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_539",
+   "item_id": "a963e0a9e4edba25_user_539",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "no_context",
+   "user": "user_539",
+   "item_id": "a963e0a9e4edba25_user_539",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_539",
+   "item_id": "a963e0a9e4edba25_user_539",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_394",
+   "item_id": "d08c3a05c0dccf12_user_394",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 24
+  },
+  {
+   "cond": "same",
+   "user": "user_394",
+   "item_id": "d08c3a05c0dccf12_user_394",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 24
+  },
+  {
+   "cond": "cross",
+   "user": "user_394",
+   "item_id": "d08c3a05c0dccf12_user_394",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_394",
+   "item_id": "d08c3a05c0dccf12_user_394",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "no_context",
+   "user": "user_394",
+   "item_id": "d08c3a05c0dccf12_user_394",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_394",
+   "item_id": "d08c3a05c0dccf12_user_394",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_329",
+   "item_id": "130c5d2f9f947c13_user_329",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 24
+  },
+  {
+   "cond": "same",
+   "user": "user_329",
+   "item_id": "130c5d2f9f947c13_user_329",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 24
+  },
+  {
+   "cond": "cross",
+   "user": "user_329",
+   "item_id": "130c5d2f9f947c13_user_329",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 24
+  },
+  {
+   "cond": "cross",
+   "user": "user_329",
+   "item_id": "130c5d2f9f947c13_user_329",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 24
+  },
+  {
+   "cond": "no_context",
+   "user": "user_329",
+   "item_id": "130c5d2f9f947c13_user_329",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_329",
+   "item_id": "130c5d2f9f947c13_user_329",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_667",
+   "item_id": "2c9951221220068c_user_667",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 19
+  },
+  {
+   "cond": "same",
+   "user": "user_667",
+   "item_id": "2c9951221220068c_user_667",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "D",
+   "correct": false,
+   "ctx_items": 19
+  },
+  {
+   "cond": "cross",
+   "user": "user_667",
+   "item_id": "2c9951221220068c_user_667",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_667",
+   "item_id": "2c9951221220068c_user_667",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "D",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "no_context",
+   "user": "user_667",
+   "item_id": "2c9951221220068c_user_667",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_667",
+   "item_id": "2c9951221220068c_user_667",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "D",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_161",
+   "item_id": "2da5b9b404bd1dfa_user_161",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "same",
+   "user": "user_161",
+   "item_id": "2da5b9b404bd1dfa_user_161",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "cross",
+   "user": "user_161",
+   "item_id": "2da5b9b404bd1dfa_user_161",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "cross",
+   "user": "user_161",
+   "item_id": "2da5b9b404bd1dfa_user_161",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "no_context",
+   "user": "user_161",
+   "item_id": "2da5b9b404bd1dfa_user_161",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_161",
+   "item_id": "2da5b9b404bd1dfa_user_161",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_437",
+   "item_id": "a96675362e64dde8_user_437",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "same",
+   "user": "user_437",
+   "item_id": "a96675362e64dde8_user_437",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "D",
+   "correct": false,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_437",
+   "item_id": "a96675362e64dde8_user_437",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_437",
+   "item_id": "a96675362e64dde8_user_437",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "D",
+   "correct": false,
+   "ctx_items": 23
+  },
+  {
+   "cond": "no_context",
+   "user": "user_437",
+   "item_id": "a96675362e64dde8_user_437",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_437",
+   "item_id": "a96675362e64dde8_user_437",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "D",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_178",
+   "item_id": "5fc3a1bb8d833f8c_user_178",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 21
+  },
+  {
+   "cond": "same",
+   "user": "user_178",
+   "item_id": "5fc3a1bb8d833f8c_user_178",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "C",
+   "correct": false,
+   "ctx_items": 21
+  },
+  {
+   "cond": "cross",
+   "user": "user_178",
+   "item_id": "5fc3a1bb8d833f8c_user_178",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_178",
+   "item_id": "5fc3a1bb8d833f8c_user_178",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "D",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "no_context",
+   "user": "user_178",
+   "item_id": "5fc3a1bb8d833f8c_user_178",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_178",
+   "item_id": "5fc3a1bb8d833f8c_user_178",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "C",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_107",
+   "item_id": "7d2f7c69d468e61b_user_107",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "same",
+   "user": "user_107",
+   "item_id": "7d2f7c69d468e61b_user_107",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_107",
+   "item_id": "7d2f7c69d468e61b_user_107",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_107",
+   "item_id": "7d2f7c69d468e61b_user_107",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "no_context",
+   "user": "user_107",
+   "item_id": "7d2f7c69d468e61b_user_107",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_107",
+   "item_id": "7d2f7c69d468e61b_user_107",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_107",
+   "item_id": "73f7e1d33e301c67_user_107",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "same",
+   "user": "user_107",
+   "item_id": "73f7e1d33e301c67_user_107",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_107",
+   "item_id": "73f7e1d33e301c67_user_107",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_107",
+   "item_id": "73f7e1d33e301c67_user_107",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "no_context",
+   "user": "user_107",
+   "item_id": "73f7e1d33e301c67_user_107",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_107",
+   "item_id": "73f7e1d33e301c67_user_107",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_445",
+   "item_id": "4dab2c720d2fbed3_user_445",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 24
+  },
+  {
+   "cond": "same",
+   "user": "user_445",
+   "item_id": "4dab2c720d2fbed3_user_445",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "C",
+   "correct": false,
+   "ctx_items": 24
+  },
+  {
+   "cond": "cross",
+   "user": "user_445",
+   "item_id": "4dab2c720d2fbed3_user_445",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 20
+  },
+  {
+   "cond": "cross",
+   "user": "user_445",
+   "item_id": "4dab2c720d2fbed3_user_445",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "C",
+   "correct": false,
+   "ctx_items": 20
+  },
+  {
+   "cond": "no_context",
+   "user": "user_445",
+   "item_id": "4dab2c720d2fbed3_user_445",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_445",
+   "item_id": "4dab2c720d2fbed3_user_445",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "C",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_536",
+   "item_id": "bd6f83b8d2094671_user_536",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "same",
+   "user": "user_536",
+   "item_id": "bd6f83b8d2094671_user_536",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_536",
+   "item_id": "bd6f83b8d2094671_user_536",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 20
+  },
+  {
+   "cond": "cross",
+   "user": "user_536",
+   "item_id": "bd6f83b8d2094671_user_536",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 20
+  },
+  {
+   "cond": "no_context",
+   "user": "user_536",
+   "item_id": "bd6f83b8d2094671_user_536",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_536",
+   "item_id": "bd6f83b8d2094671_user_536",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_317",
+   "item_id": "2ba03263b5e32e44_user_317",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "same",
+   "user": "user_317",
+   "item_id": "2ba03263b5e32e44_user_317",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_317",
+   "item_id": "2ba03263b5e32e44_user_317",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_317",
+   "item_id": "2ba03263b5e32e44_user_317",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "no_context",
+   "user": "user_317",
+   "item_id": "2ba03263b5e32e44_user_317",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_317",
+   "item_id": "2ba03263b5e32e44_user_317",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "D",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_104",
+   "item_id": "272082412d460a4c_user_104",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "same",
+   "user": "user_104",
+   "item_id": "272082412d460a4c_user_104",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_104",
+   "item_id": "272082412d460a4c_user_104",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_104",
+   "item_id": "272082412d460a4c_user_104",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "no_context",
+   "user": "user_104",
+   "item_id": "272082412d460a4c_user_104",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_104",
+   "item_id": "272082412d460a4c_user_104",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_170",
+   "item_id": "a53548f500a6b741_user_170",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "same",
+   "user": "user_170",
+   "item_id": "a53548f500a6b741_user_170",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "D",
+   "correct": false,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_170",
+   "item_id": "a53548f500a6b741_user_170",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 20
+  },
+  {
+   "cond": "cross",
+   "user": "user_170",
+   "item_id": "a53548f500a6b741_user_170",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "D",
+   "correct": false,
+   "ctx_items": 20
+  },
+  {
+   "cond": "no_context",
+   "user": "user_170",
+   "item_id": "a53548f500a6b741_user_170",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_170",
+   "item_id": "a53548f500a6b741_user_170",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "D",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_366",
+   "item_id": "807da6862494f96f_user_366",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "same",
+   "user": "user_366",
+   "item_id": "807da6862494f96f_user_366",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_366",
+   "item_id": "807da6862494f96f_user_366",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_366",
+   "item_id": "807da6862494f96f_user_366",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "no_context",
+   "user": "user_366",
+   "item_id": "807da6862494f96f_user_366",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_366",
+   "item_id": "807da6862494f96f_user_366",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_527",
+   "item_id": "22d873e8b714e24e_user_527",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "same",
+   "user": "user_527",
+   "item_id": "22d873e8b714e24e_user_527",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_527",
+   "item_id": "22d873e8b714e24e_user_527",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_527",
+   "item_id": "22d873e8b714e24e_user_527",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "no_context",
+   "user": "user_527",
+   "item_id": "22d873e8b714e24e_user_527",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_527",
+   "item_id": "22d873e8b714e24e_user_527",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_107",
+   "item_id": "34ad8a30bded9d25_user_107",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "same",
+   "user": "user_107",
+   "item_id": "34ad8a30bded9d25_user_107",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_107",
+   "item_id": "34ad8a30bded9d25_user_107",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 20
+  },
+  {
+   "cond": "cross",
+   "user": "user_107",
+   "item_id": "34ad8a30bded9d25_user_107",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 20
+  },
+  {
+   "cond": "no_context",
+   "user": "user_107",
+   "item_id": "34ad8a30bded9d25_user_107",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_107",
+   "item_id": "34ad8a30bded9d25_user_107",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_472",
+   "item_id": "4336abb5b694d747_user_472",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 20
+  },
+  {
+   "cond": "same",
+   "user": "user_472",
+   "item_id": "4336abb5b694d747_user_472",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 20
+  },
+  {
+   "cond": "cross",
+   "user": "user_472",
+   "item_id": "4336abb5b694d747_user_472",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_472",
+   "item_id": "4336abb5b694d747_user_472",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "no_context",
+   "user": "user_472",
+   "item_id": "4336abb5b694d747_user_472",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_472",
+   "item_id": "4336abb5b694d747_user_472",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_392",
+   "item_id": "c12961775ebcc97b_user_392",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 20
+  },
+  {
+   "cond": "same",
+   "user": "user_392",
+   "item_id": "c12961775ebcc97b_user_392",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 20
+  },
+  {
+   "cond": "cross",
+   "user": "user_392",
+   "item_id": "c12961775ebcc97b_user_392",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_392",
+   "item_id": "c12961775ebcc97b_user_392",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "no_context",
+   "user": "user_392",
+   "item_id": "c12961775ebcc97b_user_392",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_392",
+   "item_id": "c12961775ebcc97b_user_392",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_313",
+   "item_id": "f812c881c0baaab6_user_313",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 25
+  },
+  {
+   "cond": "same",
+   "user": "user_313",
+   "item_id": "f812c881c0baaab6_user_313",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 25
+  },
+  {
+   "cond": "cross",
+   "user": "user_313",
+   "item_id": "f812c881c0baaab6_user_313",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 19
+  },
+  {
+   "cond": "cross",
+   "user": "user_313",
+   "item_id": "f812c881c0baaab6_user_313",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 19
+  },
+  {
+   "cond": "no_context",
+   "user": "user_313",
+   "item_id": "f812c881c0baaab6_user_313",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_313",
+   "item_id": "f812c881c0baaab6_user_313",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "C",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_647",
+   "item_id": "2457e0520d2a1de7_user_647",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 20
+  },
+  {
+   "cond": "same",
+   "user": "user_647",
+   "item_id": "2457e0520d2a1de7_user_647",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 20
+  },
+  {
+   "cond": "cross",
+   "user": "user_647",
+   "item_id": "2457e0520d2a1de7_user_647",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 19
+  },
+  {
+   "cond": "cross",
+   "user": "user_647",
+   "item_id": "2457e0520d2a1de7_user_647",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 19
+  },
+  {
+   "cond": "no_context",
+   "user": "user_647",
+   "item_id": "2457e0520d2a1de7_user_647",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_647",
+   "item_id": "2457e0520d2a1de7_user_647",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_667",
+   "item_id": "4c467f0a56fc8c8e_user_667",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 19
+  },
+  {
+   "cond": "same",
+   "user": "user_667",
+   "item_id": "4c467f0a56fc8c8e_user_667",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 19
+  },
+  {
+   "cond": "cross",
+   "user": "user_667",
+   "item_id": "4c467f0a56fc8c8e_user_667",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_667",
+   "item_id": "4c467f0a56fc8c8e_user_667",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "no_context",
+   "user": "user_667",
+   "item_id": "4c467f0a56fc8c8e_user_667",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_667",
+   "item_id": "4c467f0a56fc8c8e_user_667",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_117",
+   "item_id": "0db549392abdd596_user_117",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "same",
+   "user": "user_117",
+   "item_id": "0db549392abdd596_user_117",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_117",
+   "item_id": "0db549392abdd596_user_117",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "cross",
+   "user": "user_117",
+   "item_id": "0db549392abdd596_user_117",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "no_context",
+   "user": "user_117",
+   "item_id": "0db549392abdd596_user_117",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_117",
+   "item_id": "0db549392abdd596_user_117",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_608",
+   "item_id": "b8de30e31a8ffc88_user_608",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "same",
+   "user": "user_608",
+   "item_id": "b8de30e31a8ffc88_user_608",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_608",
+   "item_id": "b8de30e31a8ffc88_user_608",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_608",
+   "item_id": "b8de30e31a8ffc88_user_608",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "no_context",
+   "user": "user_608",
+   "item_id": "b8de30e31a8ffc88_user_608",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_608",
+   "item_id": "b8de30e31a8ffc88_user_608",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_569",
+   "item_id": "ad962bb0ef7ce655_user_569",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "same",
+   "user": "user_569",
+   "item_id": "ad962bb0ef7ce655_user_569",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_569",
+   "item_id": "ad962bb0ef7ce655_user_569",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 24
+  },
+  {
+   "cond": "cross",
+   "user": "user_569",
+   "item_id": "ad962bb0ef7ce655_user_569",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 24
+  },
+  {
+   "cond": "no_context",
+   "user": "user_569",
+   "item_id": "ad962bb0ef7ce655_user_569",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_569",
+   "item_id": "ad962bb0ef7ce655_user_569",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_107",
+   "item_id": "394d138b7622641e_user_107",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "same",
+   "user": "user_107",
+   "item_id": "394d138b7622641e_user_107",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_107",
+   "item_id": "394d138b7622641e_user_107",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_107",
+   "item_id": "394d138b7622641e_user_107",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "no_context",
+   "user": "user_107",
+   "item_id": "394d138b7622641e_user_107",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_107",
+   "item_id": "394d138b7622641e_user_107",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "D",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_169",
+   "item_id": "d94c09913f815f0a_user_169",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "same",
+   "user": "user_169",
+   "item_id": "d94c09913f815f0a_user_169",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_169",
+   "item_id": "d94c09913f815f0a_user_169",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_169",
+   "item_id": "d94c09913f815f0a_user_169",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "no_context",
+   "user": "user_169",
+   "item_id": "d94c09913f815f0a_user_169",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_169",
+   "item_id": "d94c09913f815f0a_user_169",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_677",
+   "item_id": "773c5284b1cb43a4_user_677",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 23
+  },
+  {
+   "cond": "same",
+   "user": "user_677",
+   "item_id": "773c5284b1cb43a4_user_677",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_677",
+   "item_id": "773c5284b1cb43a4_user_677",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "cross",
+   "user": "user_677",
+   "item_id": "773c5284b1cb43a4_user_677",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "no_context",
+   "user": "user_677",
+   "item_id": "773c5284b1cb43a4_user_677",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_677",
+   "item_id": "773c5284b1cb43a4_user_677",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_550",
+   "item_id": "d0e2880904e3b107_user_550",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "same",
+   "user": "user_550",
+   "item_id": "d0e2880904e3b107_user_550",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_550",
+   "item_id": "d0e2880904e3b107_user_550",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_550",
+   "item_id": "d0e2880904e3b107_user_550",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "no_context",
+   "user": "user_550",
+   "item_id": "d0e2880904e3b107_user_550",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_550",
+   "item_id": "d0e2880904e3b107_user_550",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_146",
+   "item_id": "dd4fc7d0ba04dad9_user_146",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "same",
+   "user": "user_146",
+   "item_id": "dd4fc7d0ba04dad9_user_146",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_146",
+   "item_id": "dd4fc7d0ba04dad9_user_146",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_146",
+   "item_id": "dd4fc7d0ba04dad9_user_146",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "no_context",
+   "user": "user_146",
+   "item_id": "dd4fc7d0ba04dad9_user_146",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_146",
+   "item_id": "dd4fc7d0ba04dad9_user_146",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_108",
+   "item_id": "0bd56f7f396eca9b_user_108",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "same",
+   "user": "user_108",
+   "item_id": "0bd56f7f396eca9b_user_108",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_108",
+   "item_id": "0bd56f7f396eca9b_user_108",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "cross",
+   "user": "user_108",
+   "item_id": "0bd56f7f396eca9b_user_108",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 21
+  },
+  {
+   "cond": "no_context",
+   "user": "user_108",
+   "item_id": "0bd56f7f396eca9b_user_108",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_108",
+   "item_id": "0bd56f7f396eca9b_user_108",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "B",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_203",
+   "item_id": "bbc872a00aa66910_user_203",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "same",
+   "user": "user_203",
+   "item_id": "bbc872a00aa66910_user_203",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "cross",
+   "user": "user_203",
+   "item_id": "bbc872a00aa66910_user_203",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 20
+  },
+  {
+   "cond": "cross",
+   "user": "user_203",
+   "item_id": "bbc872a00aa66910_user_203",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 20
+  },
+  {
+   "cond": "no_context",
+   "user": "user_203",
+   "item_id": "bbc872a00aa66910_user_203",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_203",
+   "item_id": "bbc872a00aa66910_user_203",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_229",
+   "item_id": "dd304c5c0b48b6bd_user_229",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "same",
+   "user": "user_229",
+   "item_id": "dd304c5c0b48b6bd_user_229",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "C",
+   "correct": false,
+   "ctx_items": 21
+  },
+  {
+   "cond": "cross",
+   "user": "user_229",
+   "item_id": "dd304c5c0b48b6bd_user_229",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_229",
+   "item_id": "dd304c5c0b48b6bd_user_229",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "C",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "no_context",
+   "user": "user_229",
+   "item_id": "dd304c5c0b48b6bd_user_229",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_229",
+   "item_id": "dd304c5c0b48b6bd_user_229",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "C",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_069",
+   "item_id": "f13c8516d16e89cd_user_069",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 23
+  },
+  {
+   "cond": "same",
+   "user": "user_069",
+   "item_id": "f13c8516d16e89cd_user_069",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_069",
+   "item_id": "f13c8516d16e89cd_user_069",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_069",
+   "item_id": "f13c8516d16e89cd_user_069",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "no_context",
+   "user": "user_069",
+   "item_id": "f13c8516d16e89cd_user_069",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_069",
+   "item_id": "f13c8516d16e89cd_user_069",
+   "qtype": "warrant",
+   "gt": "D",
+   "pred": "D",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_651",
+   "item_id": "04bc3480b6f6a987_user_651",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "same",
+   "user": "user_651",
+   "item_id": "04bc3480b6f6a987_user_651",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "C",
+   "correct": false,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_651",
+   "item_id": "04bc3480b6f6a987_user_651",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 20
+  },
+  {
+   "cond": "cross",
+   "user": "user_651",
+   "item_id": "04bc3480b6f6a987_user_651",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "C",
+   "correct": false,
+   "ctx_items": 20
+  },
+  {
+   "cond": "no_context",
+   "user": "user_651",
+   "item_id": "04bc3480b6f6a987_user_651",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_651",
+   "item_id": "04bc3480b6f6a987_user_651",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "C",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_540",
+   "item_id": "a87514e056e1587d_user_540",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 21
+  },
+  {
+   "cond": "same",
+   "user": "user_540",
+   "item_id": "a87514e056e1587d_user_540",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 21
+  },
+  {
+   "cond": "cross",
+   "user": "user_540",
+   "item_id": "a87514e056e1587d_user_540",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 24
+  },
+  {
+   "cond": "cross",
+   "user": "user_540",
+   "item_id": "a87514e056e1587d_user_540",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 24
+  },
+  {
+   "cond": "no_context",
+   "user": "user_540",
+   "item_id": "a87514e056e1587d_user_540",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_540",
+   "item_id": "a87514e056e1587d_user_540",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_058",
+   "item_id": "c48c5166cd6b72e4_user_058",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 21
+  },
+  {
+   "cond": "same",
+   "user": "user_058",
+   "item_id": "c48c5166cd6b72e4_user_058",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 21
+  },
+  {
+   "cond": "cross",
+   "user": "user_058",
+   "item_id": "c48c5166cd6b72e4_user_058",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 21
+  },
+  {
+   "cond": "cross",
+   "user": "user_058",
+   "item_id": "c48c5166cd6b72e4_user_058",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 21
+  },
+  {
+   "cond": "no_context",
+   "user": "user_058",
+   "item_id": "c48c5166cd6b72e4_user_058",
+   "qtype": "stance",
+   "gt": "B",
+   "pred": "A",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_058",
+   "item_id": "c48c5166cd6b72e4_user_058",
+   "qtype": "warrant",
+   "gt": "C",
+   "pred": "C",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_567",
+   "item_id": "3b01e31b745cf350_user_567",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "same",
+   "user": "user_567",
+   "item_id": "3b01e31b745cf350_user_567",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "D",
+   "correct": false,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_567",
+   "item_id": "3b01e31b745cf350_user_567",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "cross",
+   "user": "user_567",
+   "item_id": "3b01e31b745cf350_user_567",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "D",
+   "correct": false,
+   "ctx_items": 21
+  },
+  {
+   "cond": "no_context",
+   "user": "user_567",
+   "item_id": "3b01e31b745cf350_user_567",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_567",
+   "item_id": "3b01e31b745cf350_user_567",
+   "qtype": "warrant",
+   "gt": "A",
+   "pred": "D",
+   "correct": false,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_214",
+   "item_id": "4cc84f23a2a63c30_user_214",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "same",
+   "user": "user_214",
+   "item_id": "4cc84f23a2a63c30_user_214",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_214",
+   "item_id": "4cc84f23a2a63c30_user_214",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 23
+  },
+  {
+   "cond": "cross",
+   "user": "user_214",
+   "item_id": "4cc84f23a2a63c30_user_214",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "C",
+   "correct": false,
+   "ctx_items": 23
+  },
+  {
+   "cond": "no_context",
+   "user": "user_214",
+   "item_id": "4cc84f23a2a63c30_user_214",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_214",
+   "item_id": "4cc84f23a2a63c30_user_214",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "same",
+   "user": "user_510",
+   "item_id": "4f371e70f520e1cb_user_510",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "same",
+   "user": "user_510",
+   "item_id": "4f371e70f520e1cb_user_510",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 21
+  },
+  {
+   "cond": "cross",
+   "user": "user_510",
+   "item_id": "4f371e70f520e1cb_user_510",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "cross",
+   "user": "user_510",
+   "item_id": "4f371e70f520e1cb_user_510",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 22
+  },
+  {
+   "cond": "no_context",
+   "user": "user_510",
+   "item_id": "4f371e70f520e1cb_user_510",
+   "qtype": "stance",
+   "gt": "A",
+   "pred": "A",
+   "correct": true,
+   "ctx_items": 0
+  },
+  {
+   "cond": "no_context",
+   "user": "user_510",
+   "item_id": "4f371e70f520e1cb_user_510",
+   "qtype": "warrant",
+   "gt": "B",
+   "pred": "B",
+   "correct": true,
+   "ctx_items": 0
+  }
+ ]
+}

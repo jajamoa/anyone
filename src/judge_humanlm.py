@@ -12,7 +12,7 @@ reward_function.py:
 
 Writes data/judge.json.
 """
-import json, re, sys
+import json, os, re, sys
 from api import call, pmap, report
 
 STATE_PROMPT_BATCHED = '''You are a helpful and meticulous evaluator. \
@@ -98,8 +98,8 @@ OTHER = (f"- If a {STATE_NAME} contains non-text content, unnecessary wrappers l
          f"multiple {STATE_NAME}s, you should contrast them against each other to ensure that your "
          f"evaluations are consistent and assign different scores to different generated {STATE_NAME}s.")
 
-items = json.load(open("data/items.json"))
 D = sys.argv[1] if len(sys.argv) > 1 else "data"   # data dir holding generations.json
+items = json.load(open(f"{D}/items.json" if os.path.exists(f"{D}/items.json") else "data/items.json"))
 gens = json.load(open(f"{D}/generations.json"))
 
 

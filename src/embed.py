@@ -2,11 +2,11 @@
 
 Same model HumanLM reports (all-mpnet-base-v2). Writes data/embeddings.json.
 """
-import json, sys
+import json, os, sys
 from sentence_transformers import SentenceTransformer
 
-items = json.load(open("data/items.json"))
 D = sys.argv[1] if len(sys.argv) > 1 else "data"   # data dir holding generations.json
+items = json.load(open(f"{D}/items.json" if os.path.exists(f"{D}/items.json") else "data/items.json"))
 gens = json.load(open(f"{D}/generations.json"))
 model = SentenceTransformer("all-mpnet-base-v2")
 

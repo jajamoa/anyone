@@ -1,0 +1,11 @@
+640 calls, 20 users, model claude-sonnet-4-6
+0 done, 640 to go
+no_context               stance   n=  80 acc=0.850
+no_context               warrant  n=  80 acc=0.325
+self-random              stance   n=  80 acc=0.900
+self-random              warrant  n=  80 acc=0.300
+self-warrantaligned      stance   n=  80 acc=0.900
+self-warrantaligned      warrant  n=  80 acc=0.412
+shuffle-warrantaligned   stance   n=  80 acc=0.838
+shuffle-warrantaligned   warrant  n=  80 acc=0.275
+bench: 640 calls, $13.09

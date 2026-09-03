@@ -1,0 +1,5 @@
+160 calls, 20 users, model claude-sonnet-4-6
+0 done, 160 to go
+derange-warrantaligned   stance   n=  80 acc=0.850
+derange-warrantaligned   warrant  n=  80 acc=0.237
+bench: 160 calls, $4.14
