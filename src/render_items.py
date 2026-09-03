@@ -65,7 +65,7 @@ page = f"""<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Anyone · all data</title>
+<title>Anyone · appendix</title>
 <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
 {css}
 {EXTRA}
@@ -82,7 +82,7 @@ page = f"""<!DOCTYPE html>
 </div></div>
 
 <section class="wrap" style="margin-top:40px">
-  <div class="kicker">All data</div>
+  <div class="kicker">Appendix</div>
   <h2>All {len(items)} items</h2>
   <p class="body">Raw data from the pilot. For each of the 60 items you can read the post, what the person actually wrote, and what the simulator wrote when given that person's history (same), another commenter's history (cross), or the same history a second time (same2). Next to each reply: the HumanLM judge score, the embedding cosine to the real comment, and the stance and warrant a reader model pulled out of it (red means it differs from the real comment). The histories themselves are not shown.</p>
   <p class="body">Means: judge {fmt(mean('same', judge))} / {fmt(mean('cross', judge))} / {fmt(mean('same2', judge))}, embedding {fmt(mean('same', emb))} / {fmt(mean('cross', emb))} / {fmt(mean('same2', emb))} (same / cross / same2).</p>
