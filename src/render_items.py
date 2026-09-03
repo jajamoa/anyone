@@ -84,7 +84,7 @@ page = f"""<!DOCTYPE html>
 <section class="wrap" style="margin-top:40px">
   <div class="kicker">Appendix</div>
   <h2>All {len(items)} items</h2>
-  <p class="body">Each block: the post (folded), the target's real comment in gray, then the simulator's reply given the target's own history (<strong>same</strong>), another commenter's history on the same post (<strong>cross</strong>), and the target's history again (<strong>same2</strong>). Each reply carries its HumanLM judge score, embedding cosine to the real comment, and the stance / warrant a reader model extracted from it (red = differs from the real comment's label). Histories are not shown.</p>
+  <p class="body">Raw data from the pilot. For each of the 60 items you can read the post, what the person actually wrote, and what the simulator wrote when given that person's history (same), another commenter's history (cross), or the same history a second time (same2). Next to each reply: the HumanLM judge score, the embedding cosine to the real comment, and the stance and warrant a reader model pulled out of it (red means it differs from the real comment). The histories themselves are not shown.</p>
   <p class="body">Means: judge {fmt(mean('same', judge))} / {fmt(mean('cross', judge))} / {fmt(mean('same2', judge))}, embedding {fmt(mean('same', emb))} / {fmt(mean('cross', emb))} / {fmt(mean('same2', emb))} (same / cross / same2).</p>
   <div class="tablewrap"><table>
     <tr><th>#</th><th>target</th><th>donor</th><th>judge same</th><th>cross</th><th>same2</th><th>emb same</th><th>cross</th><th>same2</th><th>judge same&minus;cross</th><th>same&minus;same2</th></tr>
