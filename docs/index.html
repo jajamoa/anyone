@@ -129,6 +129,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   <div class="btns">
     <a class="btn primary soon" href="#">Paper (soon)</a>
     <a class="btn" href="https://github.com/jajamoa/anyone" target="_blank" rel="noopener">Code</a>
+    <a class="btn" href="https://colab.research.google.com/github/jajamoa/anyone/blob/main/notebooks/anyone.ipynb" target="_blank" rel="noopener">Notebook</a>
     <a class="btn" href="#bibtex">BibTeX</a>
   </div>
 </header>
@@ -254,14 +255,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     <thead><tr><th>Metric</th><th>same</th><th>cross</th><th>same2</th><th>person effect [95% CI]</th><th>noise floor [95% CI]</th></tr></thead>
     <tbody>
       <tr><td>HumanLM judge</td><td>0.516</td><td>0.546</td><td>0.528</td><td>&minus;0.030 [&minus;0.106, +0.051]</td><td>&minus;0.012 [&minus;0.058, +0.038]</td></tr>
-      <tr><td>embedding cosine</td><td>0.644</td><td>0.639</td><td>0.643</td><td>+0.005 [&minus;0.011, +0.021]</td><td>+0.001 [&minus;0.012, +0.012]</td></tr>
+      <tr><td>embedding cosine</td><td>0.644</td><td>0.639</td><td>0.643</td><td>+0.005 [&minus;0.011, +0.021]</td><td>+0.000 [&minus;0.012, +0.012]</td></tr>
     </tbody>
   </table></div>
-  <p class="tnote">How often the metric ranks the right person above the other one: judge 0.39 [0.29, 0.49], embedding 0.48. A coin flip gives 0.50; the judge is below it.</p>
+  <p class="tnote">How often the metric ranks the right person above the other one: judge 0.39 [0.29, 0.49], embedding 0.48. A coin flip gives 0.50; the judge is below it. Every number in this table is recomputed from the frozen data in the <a href="https://github.com/jajamoa/anyone/blob/main/notebooks/anyone.ipynb">notebook</a>.</p>
   <div class="warn"><b>Caveat.</b> The pilot generator (Haiku) ignores the history: stance is 0.767 in all three conditions, warrant at the majority baseline, and structure read off its text is flat too. No ruler can find a person the text does not contain. Table A used Sonnet. The pilot is being regenerated with Sonnet so all three rulers meet on the same texts.</div>
 
   <h3 class="sub">C. Reading the probe off real text</h3>
-  <p class="body">Given only the real comment, a reader model recovers the labels at <strong>98.3%</strong> (stance) and <strong>65.0%</strong> (warrant; human annotators 73%). The probe applies to any simulator&rsquo;s free text.</p>
+  <p class="body">Given only the real comment, a reader model recovers the labels at <strong>98.3%</strong> (stance) and <strong>66.7%</strong> (warrant; human annotators 73%). The probe applies to any simulator&rsquo;s free text.</p>
 </section>
 
 <section class="wrap" id="why">

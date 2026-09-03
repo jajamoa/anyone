@@ -1,8 +1,0 @@
-{
- "item_id": "e10615efd15dcef3_user_059",
- "order": [
-  "same",
-  "cross"
- ],
- "judge_raw": "```json\n{\n  \"key_points\": \"1) NTA verdict - the poster is not wrong for prioritizing rest and mental health over the social gathering. 2) Mental and physical health matter more than attending the event - the poster needs downtime and shouldn't sacrifice wellbeing. 3) The MIL's lack of understanding about introversion/social battery is her issue to work through, not the poster's responsibility.\",\n  \"1\": {\n    \"thought\": \"Generated response 1 clearly affirms NTA and emphasizes that mental/physical health comes first, using the 'empty cup' metaphor. It validates that the husband's understanding matters and that one gathering won't ruin relationships. It directly addresses that the MIL's inability to respect boundaries is on her, not the poster. This aligns very well with the ground truth's core message about prioritizing health and the MIL's responsibility to understand.\",\n    \"score\": 0.88\n  },\n  \"2\": {\n    \"thought\": \"Generated response 2 also clearly states NTA and emphasizes mental/physical health priority with the 'empty cup' metaphor. It validates the husband's support and notes the MIL doesn't need to understand introversion to respect boundaries. However, it adds extra content (specific advice about what to tell the MIL, detailed description of symptoms) that goes beyond the ground truth's scope. While this additional advice is reasonable and not contradictory, it represents moderate expansion beyond the ground truth's simpler, more direct approach. The ground truth is notably concise while this response is longer with more prescriptive guidance.\",\n    \"score\": 0.79\n  }\n}\n```"
-}

@@ -1,0 +1,6 @@
+# The notebook needs only the standard library.
+# These are for `make reproduce` (headless execution) and `make rerun` (regenerating data/).
+nbconvert>=7
+nbformat>=5.1
+ipykernel
+sentence-transformers>=2.2

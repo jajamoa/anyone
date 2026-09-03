@@ -1,0 +1,1082 @@
+{
+ "52d196424a125548_user_108": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  }
+ },
+ "d3489e123a8c4900_user_084": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  }
+ },
+ "e7d3d4b285d363ed_user_686": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  }
+ },
+ "6b076a0e5a217135_user_545": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  }
+ },
+ "317393b03115f2aa_user_547": {
+  "real": {
+   "stance": "YTA",
+   "warrant": "role_obligation"
+  },
+  "same": {
+   "stance": "YTA",
+   "warrant": "role_obligation"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "same2": {
+   "stance": "YTA",
+   "warrant": "role_obligation"
+  }
+ },
+ "ce5de41c38a3e0dd_user_291": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  }
+ },
+ "e0eedf4099ab20f1_user_392": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  }
+ },
+ "ce6b435c43a2180c_user_423": {
+  "real": {
+   "stance": "YTA",
+   "warrant": "care_harm"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  }
+ },
+ "a9fc4eb04ddb86c1_user_667": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  }
+ },
+ "8f3668b10f2ec2d1_user_363": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  }
+ },
+ "93f2bc7ea062e7b3_user_518": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "honesty_communication"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "honesty_communication"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "honesty_communication"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "honesty_communication"
+  }
+ },
+ "22265a466845a637_user_469": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  }
+ },
+ "31569e197108d070_user_262": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  }
+ },
+ "e10615efd15dcef3_user_059": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  }
+ },
+ "e1c4859dc93a4c43_user_202": {
+  "real": {
+   "stance": "YTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  }
+ },
+ "1e83b2f1c4c63eff_user_293": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "cross": {
+   "stance": "YTA",
+   "warrant": "property_consent"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  }
+ },
+ "0bef1a6c9a2b3b6f_user_358": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  }
+ },
+ "e865aef322a8db52_user_475": {
+  "real": {
+   "stance": "YTA",
+   "warrant": "role_obligation"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "cross": {
+   "stance": "YTA",
+   "warrant": "safety_risk"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  }
+ },
+ "5ff24b9cc85c2353_user_228": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  }
+ },
+ "e684fdb39beb6e95_user_454": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  }
+ },
+ "a963e0a9e4edba25_user_539": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  }
+ },
+ "d08c3a05c0dccf12_user_394": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  }
+ },
+ "130c5d2f9f947c13_user_329": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  }
+ },
+ "2c9951221220068c_user_667": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  }
+ },
+ "2da5b9b404bd1dfa_user_161": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  }
+ },
+ "a96675362e64dde8_user_437": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "safety_risk"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  }
+ },
+ "5fc3a1bb8d833f8c_user_178": {
+  "real": {
+   "stance": "YTA",
+   "warrant": "fairness_reciprocity"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  }
+ },
+ "7d2f7c69d468e61b_user_107": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  }
+ },
+ "73f7e1d33e301c67_user_107": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "same": {
+   "stance": "YTA",
+   "warrant": "role_obligation"
+  },
+  "cross": {
+   "stance": "YTA",
+   "warrant": "role_obligation"
+  },
+  "same2": {
+   "stance": "YTA",
+   "warrant": "role_obligation"
+  }
+ },
+ "4dab2c720d2fbed3_user_445": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "honesty_communication"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  }
+ },
+ "bd6f83b8d2094671_user_536": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  }
+ },
+ "2ba03263b5e32e44_user_317": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  }
+ },
+ "272082412d460a4c_user_104": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  }
+ },
+ "a53548f500a6b741_user_170": {
+  "real": {
+   "stance": "YTA",
+   "warrant": "property_consent"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  }
+ },
+ "807da6862494f96f_user_366": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "cross": {
+   "stance": "YTA",
+   "warrant": "care_harm"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  }
+ },
+ "22d873e8b714e24e_user_527": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  }
+ },
+ "34ad8a30bded9d25_user_107": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  }
+ },
+ "4336abb5b694d747_user_472": {
+  "real": {
+   "stance": "YTA",
+   "warrant": "role_obligation"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  }
+ },
+ "c12961775ebcc97b_user_392": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  }
+ },
+ "f812c881c0baaab6_user_313": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  }
+ },
+ "2457e0520d2a1de7_user_647": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  }
+ },
+ "4c467f0a56fc8c8e_user_667": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  }
+ },
+ "0db549392abdd596_user_117": {
+  "real": {
+   "stance": "YTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "cross": {
+   "stance": "YTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  }
+ },
+ "b8de30e31a8ffc88_user_608": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "honesty_communication"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "honesty_communication"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "honesty_communication"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "honesty_communication"
+  }
+ },
+ "ad962bb0ef7ce655_user_569": {
+  "real": {
+   "stance": "YTA",
+   "warrant": "care_harm"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "cross": {
+   "stance": "YTA",
+   "warrant": "care_harm"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  }
+ },
+ "394d138b7622641e_user_107": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  }
+ },
+ "d94c09913f815f0a_user_169": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  }
+ },
+ "773c5284b1cb43a4_user_677": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  }
+ },
+ "d0e2880904e3b107_user_550": {
+  "real": {
+   "stance": "YTA",
+   "warrant": "care_harm"
+  },
+  "same": {
+   "stance": "YTA",
+   "warrant": "role_obligation"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same2": {
+   "stance": "YTA",
+   "warrant": "role_obligation"
+  }
+ },
+ "dd4fc7d0ba04dad9_user_146": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  }
+ },
+ "0bd56f7f396eca9b_user_108": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  }
+ },
+ "bbc872a00aa66910_user_203": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  }
+ },
+ "dd304c5c0b48b6bd_user_229": {
+  "real": {
+   "stance": "YTA",
+   "warrant": "care_harm"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  }
+ },
+ "f13c8516d16e89cd_user_069": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  }
+ },
+ "04bc3480b6f6a987_user_651": {
+  "real": {
+   "stance": "YTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  }
+ },
+ "a87514e056e1587d_user_540": {
+  "real": {
+   "stance": "YTA",
+   "warrant": "role_obligation"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "cross": {
+   "stance": "YTA",
+   "warrant": "role_obligation"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  }
+ },
+ "c48c5166cd6b72e4_user_058": {
+  "real": {
+   "stance": "YTA",
+   "warrant": "care_harm"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  }
+ },
+ "3b01e31b745cf350_user_567": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "autonomy_boundaries"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  }
+ },
+ "4cc84f23a2a63c30_user_214": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "care_harm"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "role_obligation"
+  }
+ },
+ "4f371e70f520e1cb_user_510": {
+  "real": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  },
+  "same": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  },
+  "cross": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  },
+  "same2": {
+   "stance": "NTA",
+   "warrant": "property_consent"
+  }
+ }
+}

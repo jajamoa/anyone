@@ -1,7 +1,7 @@
 .env
 ext/
-results/raw/
+data/contexts.json
 __pycache__/
 *.pyc
 .venv/
-data/items_pilot.json
+.ipynb_checkpoints/
