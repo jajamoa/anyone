@@ -2,8 +2,10 @@
 import json, os, re, time, threading, urllib.request, urllib.error
 from concurrent.futures import ThreadPoolExecutor
 
-MODEL = "claude-haiku-4-5-20251001"
-PRICE = {"in": 1.00, "out": 5.00, "cache_write": 1.25, "cache_read": 0.10}  # USD per 1M tokens
+MODEL = os.environ.get("SUITE_MODEL", "claude-haiku-4-5-20251001")
+PRICES = {"claude-haiku-4-5-20251001": {"in": 1.00, "out": 5.00, "cache_write": 1.25, "cache_read": 0.10},
+          "claude-sonnet-4-6": {"in": 3.00, "out": 15.00, "cache_write": 3.75, "cache_read": 0.30}}  # USD per 1M tokens
+PRICE = PRICES.get(MODEL, PRICES["claude-sonnet-4-6"])
 
 def _key():
     if os.path.exists(".env"):
@@ -42,7 +44,7 @@ def call(user, system=None, history=None, prefill=None, max_tokens=400, temperat
             return r["content"][0]["text"]
         except urllib.error.HTTPError as e:
             if e.code not in (429, 500, 502, 503, 529):
-                raise
+                raise RuntimeError(f"HTTP {e.code}: {e.read()[:300]}") from None
         except Exception:
             pass
         time.sleep(2 ** attempt + 1)

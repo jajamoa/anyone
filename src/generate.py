@@ -5,11 +5,13 @@
   same2  given the target's history again: a fresh sample, the noise floor
 
 Under same and cross the simulator also answers the stance / warrant questions
-directly (Method 1). Writes data/generations.json. Needs data/contexts.json,
+directly (Method 1). Writes <dir>/generations.json (default data/). Needs data/contexts.json,
 which holds the histories and is not distributed.
 """
-import json, re
+import json, re, sys
 from api import call, pmap, report
+
+D = sys.argv[1] if len(sys.argv) > 1 else "data"  # output dir; SUITE_MODEL picks the simulator
 
 SIM = ("You are simulating one specific Reddit user who comments on r/AmItheAsshole. "
        "You are given that person's past comments. Write the comment THIS PERSON would "
@@ -45,13 +47,13 @@ def run(it):
         answer = call(f"New scenario:\n{scenario}\n\n"
                       f"Q1 Stance: what verdict would THIS PERSON give?\nA. NTA\nB. YTA\n\n"
                       f"Q2 Warrant: which principle would THIS PERSON rely on?\n{options}\n\n"
-                      f"Give only the two letters.",
-                      system=MCQ, history=history, prefill="Q1:", max_tokens=12, temperature=TEMPERATURE)
-        out[cond]["mcq"] = parse_mcq("Q1:" + answer, it["warrant_options"])
+                      f"Answer in the form 'Q1: <letter> Q2: <letter>' and nothing else.",
+                      system=MCQ, history=history, max_tokens=16, temperature=TEMPERATURE)
+        out[cond]["mcq"] = parse_mcq(answer, it["warrant_options"])
     return it["item_id"], out
 
 
 if __name__ == "__main__":
     gens = dict(pmap(run, items))
-    json.dump(gens, open("data/generations.json", "w"), indent=1, ensure_ascii=False)
+    json.dump(gens, open(f"{D}/generations.json", "w"), indent=1, ensure_ascii=False)
     report(f"generated {len(gens)} items x 3")

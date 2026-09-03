@@ -1,0 +1,7 @@
+120 personas: 120 calls, $2.41
+generated 60 items x 3: 180 calls, $0.54
+judged 60 items x 3: 180 calls, $0.84
+read 60 items x 4: 240 calls, $0.23
+/Users/jajamoa/MIT/suite-metric-probe/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+embedded 60 items x 3

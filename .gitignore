@@ -5,3 +5,5 @@ __pycache__/
 *.pyc
 .venv/
 .ipynb_checkpoints/
+.vercel
+data/humanlm_pipeline/personas.json

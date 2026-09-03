@@ -4,7 +4,7 @@ A reader model sees one comment (no history) and answers the same stance /
 warrant questions. Runs on the real comment and on each generated text.
 Writes data/probe.json.
 """
-import json, re
+import json, re, sys
 from api import call, pmap, report
 
 WARRANT = {
@@ -24,7 +24,8 @@ READER = ("You are annotating a single Reddit r/AmItheAsshole comment. Read ONLY
           "relies on to justify that verdict. Do not use your own opinion of the scenario.")
 
 items = json.load(open("data/items.json"))
-gens = json.load(open("data/generations.json"))
+D = sys.argv[1] if len(sys.argv) > 1 else "data"   # data dir holding generations.json
+gens = json.load(open(f"{D}/generations.json"))
 
 
 def read(it, text):
@@ -48,5 +49,5 @@ def run(it):
 
 if __name__ == "__main__":
     probe = dict(pmap(run, items))
-    json.dump(probe, open("data/probe.json", "w"), indent=1, ensure_ascii=False)
+    json.dump(probe, open(f"{D}/probe.json", "w"), indent=1, ensure_ascii=False)
     report(f"read {len(probe)} items x 4")
