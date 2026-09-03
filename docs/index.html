@@ -126,7 +126,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   <p class="heronote"><a href="mailto:jiajie@mit.edu">jiajie@mit.edu</a></p>
   <div class="tldrbox">
     <p><b class="lb">Finding</b> Free-text user simulators (HumanLM, Turing-RL) are trained and scored by an LLM judge comparing the generated reply to the person&rsquo;s real one. Feed the model <strong>someone else&rsquo;s</strong> history and the score does not move. Ask instead which principle the person would cite, and accuracy drops from 50% to 25%, no better than guessing among four options.</p>
-    <p><b class="lb">Intuition</b> As used in these pipelines, embedding similarity and LLM-as-judge show no discriminant validity across persons: as a reward, the signal is too coarse to carry who is being simulated. A simulator&rsquo;s output should be extracted into structure before it is compared, not compared as free text by an embedding or a language model.</p>
+    <p><b class="lb">Intuition</b> Embedding similarity and LLM-as-judge lack discriminant validity across persons: as a reward, the signal is too coarse to carry who is being simulated. A simulator&rsquo;s output should be extracted into structure before it is compared, not compared as free text by an embedding or a language model.</p>
   </div>
   <div class="btns">
     <a class="btn primary soon" href="#">Paper (soon)</a>
@@ -259,13 +259,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     <tbody>
       <tr><td>HumanLM judge</td><td>0.516</td><td>0.546</td><td>0.528</td><td>&minus;0.030 [&minus;0.106, +0.051]</td><td>&minus;0.012 [&minus;0.058, +0.038]</td></tr>
       <tr><td>embedding cosine</td><td>0.644</td><td>0.639</td><td>0.643</td><td>+0.005 [&minus;0.011, +0.021]</td><td>+0.000 [&minus;0.012, +0.012]</td></tr>
-      <tr class="dim"><td colspan="6" style="text-align:left">Same 60 items, generator claude-sonnet-4.6, judge unchanged</td></tr>
-      <tr><td>HumanLM judge</td><td>0.579</td><td>0.545</td><td>0.584</td><td>+0.034 [&minus;0.028, +0.091]</td><td>&minus;0.004 [&minus;0.066, +0.058]</td></tr>
-      <tr><td>embedding cosine</td><td>0.648</td><td>0.621</td><td>0.632</td><td>+0.027 [+0.008, +0.046]</td><td>+0.016 [+0.004, +0.029]</td></tr>
     </tbody>
   </table></div>
-  <p class="tnote">How often the metric ranks the right person above the other one: Haiku texts, judge 0.39 [0.29, 0.49], embedding 0.48; Sonnet texts, judge 0.55 [0.44, 0.66], embedding 0.67. A coin flip gives 0.50. Cross vs same2 directly, judge: Haiku +0.018 [&minus;0.061, +0.091], Sonnet &minus;0.038 [&minus;0.103, +0.027]. Swapping the person moves the score no more than resampling does. With Sonnet the text carries a little more of the person (a reader model recovers the stance at 0.83 vs 0.78 under the swap), and the judge still does not separate the conditions. The embedding &ldquo;noise floor&rdquo; row for Sonnet excludes zero, which two exchangeable samples cannot produce; at 60 items, differences of 0.02 are not to be trusted.</p>
-  <p class="tnote">Haiku numbers are recomputed from the frozen data in the <a href="https://github.com/jajamoa/anyone/blob/main/notebooks/anyone.ipynb">notebook</a>; Sonnet data is in <code>data/sonnet/</code>. Every item, with the real comment, the three generated replies and their scores, is in the <a href="items.html">appendix</a>.</p>
+  <p class="tnote">How often the metric ranks the right person above the other one: judge 0.39 [0.29, 0.49], embedding 0.48. A coin flip gives 0.50; the judge is below it. Every number in this table is recomputed from the frozen data in the <a href="https://github.com/jajamoa/anyone/blob/main/notebooks/anyone.ipynb">notebook</a>.</p>
+  <p class="tnote">Cross vs same2 directly: judge +0.018 [&minus;0.061, +0.091], embedding &minus;0.004 [&minus;0.022, +0.014]. Swapping the person moves the score no more than resampling does. Every item, with the real comment, the three generated replies and their scores, is in the <a href="items.html">appendix</a>.</p>
 
   <h3 class="sub">C. Reading the probe off real text</h3>
   <p class="body">Given only the real comment, a reader model recovers the labels at <strong>98.3%</strong> (stance) and <strong>66.7%</strong> (warrant; human annotators 73%). The probe applies to any simulator&rsquo;s free text.</p>
@@ -307,7 +304,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   <div class="kicker">Status</div>
   <h2>Next</h2>
   <div class="steps">
-    <div class="step"><div class="sh">1</div>Run SUITE&rsquo;s own MCQ runner (random-donor cross, chain of thought) on the pilot users, so A and B share the same texts&rsquo; authors.</div>
+    <div class="step"><div class="sh">1</div>Regenerate the pilot with Sonnet 4.6; redo B on texts that pass the manipulation check.</div>
     <div class="step"><div class="sh">2</div>Scale to about 200 items, 3 seeds; report SNR per metric.</div>
     <div class="step"><div class="sh">3</div>Real-vs-real Turing check: judge picks the target&rsquo;s real comment vs the donor&rsquo;s, given the target&rsquo;s history.</div>
   </div>
